@@ -33,6 +33,22 @@ MATCH_SIMILARITY_THRESHOLD = 0.70
 LEXICAL_BONUS_PER_WORD = 0.05
 TOP_K_CANDIDATES = 15
 
+# Stop words: palabras funcionales que no aportan valor léxico en la búsqueda.
+# El bono léxico SOLO debe premiar sustantivos/adjetivos de contenido.
+STOP_WORDS = {
+    # Artículos y determinantes
+    "de", "la", "el", "los", "las", "un", "una", "unos", "unas", "del", "al",
+    # Preposiciones comunes
+    "para", "con", "en", "por", "a", "sin", "sobre", "bajo", "ante", "entre",
+    "hasta", "desde", "hacia",
+    # Conjunciones
+    "y", "o", "u", "e", "ni", "pero", "que",
+    # Separador dimensional ("6 x 2" → "x" no es contenido)
+    "x",
+    # Pronombres/partículas funcionales
+    "se", "su", "sus", "lo",
+}
+
 # Scraping
 SCRAPE_DELAY_SECONDS = 2
 SCRAPE_CHECKPOINT_EVERY = 10

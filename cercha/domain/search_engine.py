@@ -9,7 +9,7 @@ Corrige los bugs del sistema anterior:
 import re
 import numpy as np
 
-from cercha.config import LEXICAL_BONUS_PER_WORD, TOP_K_CANDIDATES
+from cercha.config import LEXICAL_BONUS_PER_WORD, TOP_K_CANDIDATES, STOP_WORDS
 from cercha.domain.measure_parser import (
     parsear_medida, medidas_compatibles, extraer_numeros_fallback
 )
@@ -126,10 +126,10 @@ def buscar_en_tienda(query_limpia: str, vector_query, metadata: list,
     norms_v = np.maximum(norms_v, 1e-10)
     similitudes = (v @ q / (norms_v * max(norm_q, 1e-10))).tolist()
 
-    # Paso 2: Bono léxico
-    palabras_query = set(query_limpia.split())
+    # Paso 2: Bono léxico (solo palabras de contenido, sin stop words)
+    palabras_query = set(query_limpia.split()) - STOP_WORDS
     for idx in range(len(metadata)):
-        palabras_prod = set(limpiar_texto(metadata[idx]['titulo']).split())
+        palabras_prod = set(limpiar_texto(metadata[idx]['titulo']).split()) - STOP_WORDS
         interseccion = palabras_query.intersection(palabras_prod)
         bono = len(interseccion) * LEXICAL_BONUS_PER_WORD
         similitudes[idx] = min(1.0, similitudes[idx] + bono)
@@ -177,7 +177,7 @@ def buscar_en_tienda(query_limpia: str, vector_query, metadata: list,
 
     # Paso 5: Juez
     es_match = evaluar_match(similitud_candidato, dim_coincide, umbral_match)
-    specs = candidato.get('specs', None)
+    specs = candidato.get('especificaciones', None)
     cantidad = extraer_cantidad(candidato['titulo'], specs)
     precio = candidato.get('precio', 0)
     precio_unitario = precio / cantidad if cantidad > 0 else precio

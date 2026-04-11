@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pytest tests/test_search_engine.py -v)",
+      "Bash(python -m pip show pytest)",
+      "Bash(where python:*)",
+      "Bash(\"C:\\\\Users\\\\Khan\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -m pytest tests/test_search_engine.py -v)",
+      "Bash(pip show:*)",
+      "Bash(pip3 show:*)",
+      "Bash(pip install:*)",
+      "Bash(python -m pytest tests/test_measure_parser.py tests/test_search_engine.py -v)"
+    ]
+  }
+}

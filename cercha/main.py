@@ -66,7 +66,7 @@ def iniciar_comparador():
             break
 
         query_limpia = limpiar_texto(query)
-        vector_query = modelo.encode([query_limpia], convert_to_tensor=True)
+        vector_query = modelo.encode([query_limpia], convert_to_tensor=False)
 
         resultados = {}
         for nombre, datos in tiendas_data.items():

@@ -75,6 +75,38 @@ class TestParsearMedida:
         assert m.calibre == "14"
         assert m.largo == "100"
 
+    def test_solo_largo_mm(self):
+        """'50mm' sin calibre → calibre vacío, largo=50, unit=mm."""
+        m = parsear_medida("tornillo madera 50mm")
+        assert m is not None
+        assert m.calibre == ""
+        assert m.largo == "50"
+        assert m.unidad == "mm"
+
+    def test_solo_largo_pulgadas(self):
+        """'2 pulgadas' sin calibre → calibre vacío, largo=2, unit=pulgadas."""
+        m = parsear_medida("tornillo madera 2 pulgadas")
+        assert m is not None
+        assert m.calibre == ""
+        assert m.largo == "2"
+        assert m.unidad == "pulgadas"
+
+    def test_solo_largo_comillas(self):
+        """'1 5/8\"' sin calibre → calibre vacío, largo fracción, unit pulgadas."""
+        m = parsear_medida('tornillo madera 1 5/8"')
+        assert m is not None
+        assert m.calibre == ""
+        assert m.largo == "1 5/8"
+        assert m.unidad == "pulgadas"
+
+    def test_patron_axb_no_afectado_por_patron_b(self):
+        """'8x50mm' sigue parseando con calibre=8, no como largo solo."""
+        m = parsear_medida("tornillo 8x50mm")
+        assert m is not None
+        assert m.calibre == "8"
+        assert m.largo == "50"
+        assert m.unidad == "mm"
+
     def test_sin_medida(self):
         m = parsear_medida("tornillo para madera zincado")
         assert m is None
@@ -130,6 +162,31 @@ class TestMedidasCompatibles:
         q = parsear_medida("8x2")
         p = parsear_medida("8x3")
         assert medidas_compatibles(q, p) is False
+
+    def test_query_solo_largo_matchea_producto_con_calibre(self):
+        """Query '50mm' (sin calibre) matchea producto '8x50mm' por largo."""
+        q = parsear_medida("tornillo madera 50mm")
+        p = parsear_medida("tornillo 8 x 50 mm")
+        assert q is not None and p is not None
+        assert q.calibre == ""   # solo largo en la query
+        assert medidas_compatibles(q, p) is True
+
+    def test_query_solo_largo_rechaza_largo_distinto(self):
+        """Query '50mm' NO matchea '8x40mm' (largo diferente)."""
+        q = parsear_medida("tornillo madera 50mm")
+        p = parsear_medida("tornillo 8 x 40 mm")
+        assert q is not None and p is not None
+        assert medidas_compatibles(q, p) is False
+
+    def test_falso_positivo_bypass_corregido(self):
+        """Bug de bypass: '50mm' ya NO devuelve None → medida_query no es None
+        → search_engine no ejecuta la rama 'sin medidas' (dim_coincide=True ciego)."""
+        m = parsear_medida("tornillo madera 50mm")
+        # La corrección exige que devuelva algo (no None)
+        assert m is not None, (
+            "parsear_medida devuelve None para '50mm', activando el bypass "
+            "dim_coincide=True en search_engine"
+        )
 
     def test_turbo_screw_format(self):
         """Formato Turbo Screw #14(6) 100/60 X 100 → calibre 14, largo 100."""

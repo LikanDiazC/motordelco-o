@@ -117,7 +117,20 @@ def parsear_medida(texto: str) -> Optional[MedidaTornillo]:
             unidad=_normalizar_unidad(match.group(3)),
         )
 
-    # Último recurso: largo suelto sin calibre (ej: "fibrocemento 1 1/4")
+    # Patrón B: largo con unidad explícita, sin calibre (ej: "50mm", "2 pulgadas", '1 5/8"')
+    # Rescata queries como "tornillo madera 50mm" donde no existe un "calibre x largo".
+    # Sin este patrón, parsear_medida devuelve None y search_engine asume "sin medida",
+    # disparando el falso positivo dim_coincide=True para cualquier candidato.
+    p_largo_unidad = r'(\d+(?:\.\d+)?(?:[\s-]+\d+/\d+|/\d+)?)\s*(mm|pulgadas?|")(?=\s|$)'
+    match_lu = re.search(p_largo_unidad, t)
+    if match_lu:
+        return MedidaTornillo(
+            calibre="",
+            largo=match_lu.group(1).strip(),
+            unidad=_normalizar_unidad(match_lu.group(2)),
+        )
+
+    # Último recurso: fracción suelta sin calibre ni unidad (ej: "fibrocemento 1 1/4")
     # Retorna solo el largo para que al menos se compare dimensionalmente
     p_solo = r'(\d+\s+\d+/\d+|\d+/\d+)(?:\s*(?:"|pulgadas?))?'
     match_solo = re.search(p_solo, t)
