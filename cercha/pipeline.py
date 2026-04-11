@@ -12,7 +12,29 @@ Uso:
 """
 
 import sys
-from cercha.config import STORES
+import pickle
+from sentence_transformers import SentenceTransformer
+from cercha.config import STORES, EMBEDDING_MODEL, MATCH_SIMILARITY_THRESHOLD
+
+class CerchaPipeline:
+    """
+    Motor centralizado en memoria.
+    Carga el modelo semántico y los cerebros vectoriales para su uso en la API y el Dashboard.
+    """
+    def __init__(self):
+        print(f"Cargando modelo semántico ({EMBEDDING_MODEL})...")
+        self.modelo = SentenceTransformer(EMBEDDING_MODEL)
+        self.umbral = MATCH_SIMILARITY_THRESHOLD
+        self.tiendas = {}
+
+        for nombre_tienda, config_tienda in STORES.items():
+            ruta_cerebro = config_tienda["brain"]
+            if ruta_cerebro.exists():
+                print(f"  Cargando cerebro de {nombre_tienda}...")
+                with open(ruta_cerebro, 'rb') as f:
+                    self.tiendas[nombre_tienda] = pickle.load(f)
+            else:
+                print(f"  Advertencia: No se encontró el cerebro para {nombre_tienda} en {ruta_cerebro}")
 
 
 def cmd_scrape(tienda: str):
