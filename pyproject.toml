@@ -1,0 +1,36 @@
+[project]
+name = "cercha"
+version = "4.0.0"
+description = "Motor de cotizacion y homologacion de productos de ferreteria"
+requires-python = ">=3.10"
+dependencies = [
+    "sentence-transformers>=2.2.0",
+    "numpy>=1.24.0",
+    "playwright>=1.40.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+faiss = [
+    "faiss-cpu>=1.7.0",
+]
+api = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+]
+
+[project.scripts]
+cercha = "cercha.main:iniciar_comparador"
+cercha-pipeline = "cercha.pipeline:main"
+cercha-migrate = "cercha.migrate:migrar"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
