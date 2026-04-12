@@ -25,7 +25,6 @@ api = [
 [project.scripts]
 cercha = "cercha.main:iniciar_comparador"
 cercha-pipeline = "cercha.pipeline:main"
-cercha-migrate = "cercha.migrate:migrar"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
