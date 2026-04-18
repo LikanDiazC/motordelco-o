@@ -8,7 +8,8 @@
       "Bash(pip show:*)",
       "Bash(pip3 show:*)",
       "Bash(pip install:*)",
-      "Bash(python -m pytest tests/test_measure_parser.py tests/test_search_engine.py -v)"
+      "Bash(python -m pytest tests/test_measure_parser.py tests/test_search_engine.py -v)",
+      "mcp__ea94f6a2-b35b-4954-aace-9d54cb93e2f4__notion-search"
     ]
   }
 }

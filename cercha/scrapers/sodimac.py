@@ -6,10 +6,16 @@ from cercha.config import STORES, PAGE_LOAD_TIMEOUT_MS
 from cercha.scrapers.base_scraper import BaseCatalogScraper, BaseDeepScraper
 
 
+SODIMAC_BUSQUEDAS = [
+    "tornillos", "pernos tuercas", "tablero mdf", "plancha osb",
+    "pintura latex", "cemento mortero",
+]
+
+
 class SodimacCatalogScraper(BaseCatalogScraper):
 
-    def __init__(self, busqueda: str = "tornillos"):
-        super().__init__(busqueda, STORES["sodimac"]["catalog_raw"])
+    def __init__(self, busquedas: "str | list[str]" = SODIMAC_BUSQUEDAS):
+        super().__init__(busquedas, STORES["sodimac"]["catalog_raw"])
 
     def construir_url(self, pagina: int) -> str:
         base = f"https://www.sodimac.cl/sodimac-cl/buscar?Ntt={self.busqueda}"

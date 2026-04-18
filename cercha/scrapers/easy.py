@@ -7,10 +7,16 @@ from cercha.config import STORES, PAGE_LOAD_TIMEOUT_MS
 from cercha.scrapers.base_scraper import BaseCatalogScraper, BaseDeepScraper
 
 
+EASY_BUSQUEDAS = [
+    "tornillo", "perno tuerca", "mdf osb terciado",
+    "pintura latex", "cemento mortero",
+]
+
+
 class EasyCatalogScraper(BaseCatalogScraper):
 
-    def __init__(self, busqueda: str = "tornillo"):
-        super().__init__(busqueda, STORES["easy"]["catalog_raw"])
+    def __init__(self, busquedas: "str | list[str]" = EASY_BUSQUEDAS):
+        super().__init__(busquedas, STORES["easy"]["catalog_raw"])
 
     def construir_url(self, pagina: int) -> str:
         base = f"https://www.easy.cl/search/{self.busqueda}"

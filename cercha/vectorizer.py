@@ -10,7 +10,8 @@ from pathlib import Path
 from sentence_transformers import SentenceTransformer
 
 from cercha.config import EMBEDDING_MODEL, STORES
-from cercha.domain.feature_engineering import construir_super_oracion, es_tornillo
+from cercha.domain.feature_engineering import construir_super_oracion
+from cercha.domain.taxonomy import detectar_categoria
 
 # Specs que se preservan en la metadata del cerebro (para extraer cantidad y medidas)
 _SPECS_KEYS_CANTIDAD = {'Contenido', 'Cantidad por paquete', 'Cantidad de Unidades (PPUM)'}
@@ -53,21 +54,20 @@ def vectorizar_tienda(nombre_tienda: str):
         titulo = prod.get('titulo', '').strip()
         if not titulo:
             continue
-        if not es_tornillo(titulo):
-            continue
 
         specs = prod.get('especificaciones', {})
         desc_extra = prod.get('descripcion_completa', prod.get('descripcion', ''))
-        # Limpiar HTML si viene de Easy
         desc_extra = re.sub(r'<[^>]+>', ' ', desc_extra).replace('&quot;', '"')
 
-        features = construir_super_oracion(titulo, specs, desc_extra)
+        categoria = detectar_categoria(titulo)
+        features = construir_super_oracion(titulo, specs, desc_extra, categoria)
 
         productos_listos.append({
             "sku": prod.get('sku', 'N/A'),
             "titulo": titulo,
             "precio_clp": prod.get('precio_clp', 0),
             "url": prod.get('url', ''),
+            "categoria": features["categoria"],
             "medida_extraida": features["medida"],
             "texto_embedding": features["texto_embedding"],
             "specs": specs,
@@ -90,6 +90,7 @@ def vectorizar_tienda(nombre_tienda: str):
         "titulo": p['titulo'],
         "precio": p['precio_clp'],
         "url": p['url'],
+        "categoria": p['categoria'],
         "medida_limpia": p['medida_extraida'],
         "specs": _specs_relevantes(p.get('specs', {})),
     } for p in productos_listos]

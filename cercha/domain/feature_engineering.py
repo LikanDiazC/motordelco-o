@@ -9,6 +9,7 @@ from cercha.domain.dictionaries import (
     USO_MAP, PUNTA_MAP, CABEZA_MAP, MATERIAL_MAP, BOUNDARY_MATCH_TERMS
 )
 from cercha.domain.measure_parser import parsear_medida
+from cercha.domain.taxonomy import detectar_categoria, Categoria
 
 
 def deducir_caracteristica(texto: str, diccionario_map: dict, valor_defecto: str) -> str:
@@ -99,46 +100,48 @@ def _medida_desde_titulo(titulo: str) -> str:
     return ""
 
 
-def construir_super_oracion(titulo: str, specs: dict, descripcion_extra: str = "") -> dict:
-    """Pipeline unificado de features para CUALQUIER tienda.
+def construir_super_oracion(titulo: str, specs: dict, descripcion_extra: str = "",
+                            categoria: Categoria | None = None) -> dict:
+    """Pipeline unificado de features para CUALQUIER tienda y categoría.
 
-    Retorna un diccionario con todas las características extraídas
-    y la súper oración simétrica.
+    La súper oración se adapta según la categoría detectada:
+    - Tornillos/Pernos: incluye punta, cabeza, material
+    - Maderas/Pinturas/Cementos: usa título + medida + atributos disponibles
     """
-    # Construir contextos separados para evitar contaminación cruzada
-    texto_uso = " ".join(filter(None, [
-        titulo,
-        specs.get("Uso", ""),
-        specs.get("Uso Recomendado", ""),
-        specs.get("Superficie de aplicación", ""),
-        specs.get("Recomendaciones", ""),
-        descripcion_extra,
-    ]))
-    texto_material = " ".join(filter(None, [
-        titulo,
-        specs.get("Material", ""),
-        specs.get("Terminación", ""),
-    ]))
-    texto_cabeza = " ".join(filter(None, [
-        titulo,
-        specs.get("Tipo de cabeza", ""),
-    ]))
-    texto_punta = " ".join(filter(None, [
-        titulo,
-        specs.get("Modelo", ""),
-        specs.get("Tipo de tornillo", ""),
-    ]))
+    if categoria is None:
+        categoria = detectar_categoria(titulo)
 
-    uso = deducir_caracteristica(texto_uso, USO_MAP, "Construccion general")
-    punta = deducir_caracteristica(texto_punta, PUNTA_MAP, "Punta Estandar")
-    cabeza = deducir_caracteristica(texto_cabeza, CABEZA_MAP, "Cabeza Estandar")
-    material = deducir_caracteristica(texto_material, MATERIAL_MAP, "Acero Estandar")
     medida = extraer_medida(titulo, specs)
 
-    # SÚPER ORACIÓN SIMÉTRICA: misma estructura para todas las tiendas
-    super_oracion = f"{titulo} {punta} {medida} {uso} {cabeza} {material}"
+    # Atributos comunes a todas las categorías
+    texto_material = " ".join(filter(None, [
+        titulo, specs.get("Material", ""), specs.get("Terminación", ""),
+    ]))
+    material = deducir_caracteristica(texto_material, MATERIAL_MAP, "")
+
+    # Atributos específicos de tornillos y pernos
+    punta = ""
+    cabeza = ""
+    uso = ""
+    if categoria.id in ("tornillos", "pernos"):
+        texto_uso = " ".join(filter(None, [
+            titulo, specs.get("Uso", ""), specs.get("Uso Recomendado", ""),
+            specs.get("Superficie de aplicación", ""), descripcion_extra,
+        ]))
+        texto_cabeza = " ".join(filter(None, [titulo, specs.get("Tipo de cabeza", "")]))
+        texto_punta = " ".join(filter(None, [
+            titulo, specs.get("Modelo", ""), specs.get("Tipo de tornillo", ""),
+        ]))
+        uso = deducir_caracteristica(texto_uso, USO_MAP, "")
+        punta = deducir_caracteristica(texto_punta, PUNTA_MAP, "")
+        cabeza = deducir_caracteristica(texto_cabeza, CABEZA_MAP, "")
+
+    # Súper oración: título siempre primero, luego atributos relevantes (sin relleno vacío)
+    partes = [titulo] + [p for p in [punta, medida, uso, cabeza, material] if p]
+    super_oracion = " ".join(partes)
 
     return {
+        "categoria": categoria.id,
         "uso": uso,
         "punta": punta,
         "cabeza": cabeza,
@@ -146,9 +149,3 @@ def construir_super_oracion(titulo: str, specs: dict, descripcion_extra: str = "
         "medida": medida,
         "texto_embedding": super_oracion,
     }
-
-
-def es_tornillo(titulo: str) -> bool:
-    """Filtro para descartar productos que no son tornillos."""
-    keywords = ("tornillo", "tirafondo", "soberbio", "autoperforante", "roscalata")
-    return any(k in titulo.lower() for k in keywords)

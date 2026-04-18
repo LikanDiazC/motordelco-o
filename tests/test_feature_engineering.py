@@ -4,9 +4,9 @@ import pytest
 from cercha.domain.feature_engineering import (
     construir_super_oracion,
     deducir_caracteristica,
-    es_tornillo,
     extraer_medida,
 )
+from cercha.domain.taxonomy import detectar_categoria
 from cercha.domain.dictionaries import USO_MAP, PUNTA_MAP, CABEZA_MAP, MATERIAL_MAP
 
 
@@ -44,19 +44,31 @@ class TestDeducirCaracteristica:
         assert r == "mi_default"
 
 
-class TestEsTornillo:
+class TestDetectarCategoria:
     def test_tornillo(self):
-        assert es_tornillo("Tornillo Volcanita 6x1") is True
+        assert detectar_categoria("Tornillo Volcanita 6x1").id == "tornillos"
 
     def test_tirafondo(self):
-        assert es_tornillo("TIRAFONDO 1/4 x 2") is True
+        assert detectar_categoria("TIRAFONDO 1/4 x 2").id == "tornillos"
 
     def test_autoperforante(self):
-        assert es_tornillo("Autoperforante hexagonal 12x2") is True
+        assert detectar_categoria("Autoperforante hexagonal 12x2").id == "tornillos"
 
-    def test_no_tornillo(self):
-        assert es_tornillo("Sierra circular Bosch") is False
-        assert es_tornillo("Taladro percutor 13mm") is False
+    def test_perno(self):
+        assert detectar_categoria("Perno hexagonal 1/2 x 2").id == "pernos"
+
+    def test_mdf(self):
+        assert detectar_categoria("Panel MDF 15mm 1.22x2.44").id == "maderas"
+
+    def test_pintura(self):
+        assert detectar_categoria("Pintura látex interior 4L").id == "pinturas"
+
+    def test_cemento(self):
+        assert detectar_categoria("Cemento gris 25kg").id == "cementos"
+
+    def test_general_para_no_categorizado(self):
+        assert detectar_categoria("Sierra circular Bosch").id == "general"
+        assert detectar_categoria("Taladro percutor 13mm").id == "general"
 
 
 class TestConstruirSuperOracion:

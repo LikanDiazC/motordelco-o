@@ -1,18 +1,13 @@
 """Juez de match honesto. Lógica de decisión transparente sin ML sintético.
 
-El XGBoost anterior era un clasificador entrenado sobre datos sintéticos que
-simplemente aprendía la regla: match = (similitud >= 0.70) AND (dimensión == 1).
-Este módulo implementa una lógica más sofisticada con umbral adaptativo:
-- Si las dimensiones coinciden exactamente, el umbral baja (la medida ya es evidencia fuerte)
-- Si las dimensiones no coinciden, se requiere altísima similitud semántica
+Umbral adaptativo por categoría:
+- Si las dimensiones coinciden: umbral reducido (la medida es evidencia fuerte)
+- Si no coinciden: umbral alto por categoría (default 0.70)
 """
 
 from dataclasses import dataclass
 from cercha.config import MATCH_SIMILARITY_THRESHOLD
-
-
-# Umbral reducido cuando las dimensiones ya matchean (la medida exacta es evidencia fuerte)
-MATCH_THRESHOLD_WITH_DIMENSIONS = 0.55
+from cercha.domain.taxonomy import CATEGORIAS, Categoria
 
 
 @dataclass
@@ -26,14 +21,24 @@ class MatchResult:
 
 
 def evaluar_match(similitud: float, dimensiones_coinciden: bool,
+                  categoria: Categoria | None = None,
                   umbral: float = MATCH_SIMILARITY_THRESHOLD) -> bool:
-    """Regla de decisión con umbral adaptativo.
+    """Regla de decisión con umbral adaptativo por categoría.
 
-    - Si dimensiones coinciden: umbral más permisivo (0.55) porque la medida exacta
-      ya confirma que es el producto correcto. Queries cortas como "tornillo 8x2"
-      generan embeddings débiles pero la medida exacta es suficiente evidencia.
-    - Si dimensiones no coinciden: requiere umbral alto (0.70) como mínimo.
+    Si la categoría tiene dimensiones (tornillos, pernos, maderas):
+      - Con dimensión coincidente → umbral bajo de la categoría
+      - Sin dimensión → False
+    Si la categoría no tiene dimensiones (pinturas, cementos):
+      - Usa umbral_sin_dimension de la categoría directamente
     """
-    if not dimensiones_coinciden:
-        return False
-    return similitud >= MATCH_THRESHOLD_WITH_DIMENSIONS
+    if categoria is None:
+        categoria = CATEGORIAS["general"]
+
+    if dimensiones_coinciden:
+        return similitud >= categoria.umbral_con_dimension
+
+    # Solo pinturas y cementos permiten match puramente semántico (no tienen dimensión crítica)
+    if categoria.id in ("pinturas", "cementos"):
+        return similitud >= categoria.umbral_sin_dimension
+
+    return False

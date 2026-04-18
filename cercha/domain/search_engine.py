@@ -13,6 +13,7 @@ from cercha.config import LEXICAL_BONUS_PER_WORD, TOP_K_CANDIDATES, STOP_WORDS
 from cercha.domain.measure_parser import (
     parsear_medida, medidas_compatibles, extraer_numeros_fallback
 )
+from cercha.domain.taxonomy import CATEGORIAS
 from cercha.judge import evaluar_match, MatchResult
 
 
@@ -175,8 +176,10 @@ def buscar_en_tienda(query_limpia: str, vector_query, metadata: list,
         similitud_candidato = similitudes[mejor_idx]
         dim_coincide = False
 
-    # Paso 5: Juez
-    es_match = evaluar_match(similitud_candidato, dim_coincide, umbral_match)
+    # Paso 5: Juez — usar categoría del producto para umbrales adaptados
+    cat_id = candidato.get('categoria', 'general')
+    categoria = CATEGORIAS.get(cat_id, CATEGORIAS['general'])
+    es_match = evaluar_match(similitud_candidato, dim_coincide, categoria)
     specs = candidato.get('especificaciones', None)
     cantidad = extraer_cantidad(candidato['titulo'], specs)
     precio = candidato.get('precio', 0)
