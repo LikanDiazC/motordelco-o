@@ -180,8 +180,12 @@ def buscar_en_tienda(query_limpia: str, vector_query, metadata: list,
     cat_id = candidato.get('categoria', 'general')
     categoria = CATEGORIAS.get(cat_id, CATEGORIAS['general'])
     es_match = evaluar_match(similitud_candidato, dim_coincide, categoria)
-    specs = candidato.get('especificaciones', None)
-    cantidad = extraer_cantidad(candidato['titulo'], specs)
+    # Cantidad: preferir lo que ya calculó el normalizer (cantidad_empaque); si
+    # el cerebro es viejo y no lo tiene, caemos al parser legacy sobre specs/título.
+    cantidad = candidato.get('cantidad_empaque')
+    if not cantidad:
+        specs = candidato.get('especificaciones', None)
+        cantidad = extraer_cantidad(candidato['titulo'], specs)
     precio = candidato.get('precio', 0)
     precio_unitario = precio / cantidad if cantidad > 0 else precio
 

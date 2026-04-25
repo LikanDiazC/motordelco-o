@@ -1,0 +1,39 @@
+{
+  "total_pares": 1141,
+  "positivos": 163,
+  "negativos_duros": 489,
+  "negativos_faciles": 489,
+  "ratio_pos_neg": 0.167,
+  "pares_intra_cluster_total": 9765,
+  "pares_descartados": 8486,
+  "parametros": {
+    "pos_cosine_min": 0.65,
+    "pos_diff_largo_max": 2.0,
+    "pos_diff_diam_max": 1.0,
+    "neg_facil_cosine_max": 0.35,
+    "neg_facil_ratio": 3,
+    "neg_duro_diff_largo": 20.0,
+    "neg_duro_diff_diam": 4.0,
+    "neg_duro_jaccard_max": 0.1
+  },
+  "distribucion_positivos_por_cluster": {
+    "38": 102,
+    "63": 45,
+    "61": 11,
+    "51": 2,
+    "48": 2,
+    "32": 1
+  },
+  "marcas_top_en_positivos": {
+    "sika": 82,
+    "imporper": 44,
+    "cave": 17,
+    "tricolor": 11,
+    "soprocal": 3,
+    "sipa": 2,
+    "mamut": 1,
+    "propack": 1,
+    "mosay": 1,
+    "dewalt": 1
+  }
+}

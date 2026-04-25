@@ -11,6 +11,7 @@ STORES = {
     "sodimac": {
         "catalog_raw": DATA_DIR / "sodimac" / "catalogo_crudo.json",
         "catalog_deep": DATA_DIR / "sodimac" / "catalogo_profundo.json",
+        "catalog_normalized": DATA_DIR / "sodimac" / "catalogo_normalizado.json",
         "catalog_vectors": DATA_DIR / "sodimac" / "catalogo_vectores.json",
         "brain": DATA_DIR / "sodimac" / "cerebro.pkl",
         "faiss_index": DATA_DIR / "sodimac" / "index.faiss",
@@ -18,6 +19,7 @@ STORES = {
     "easy": {
         "catalog_raw": DATA_DIR / "easy" / "catalogo_crudo.json",
         "catalog_deep": DATA_DIR / "easy" / "catalogo_profundo.json",
+        "catalog_normalized": DATA_DIR / "easy" / "catalogo_normalizado.json",
         "catalog_vectors": DATA_DIR / "easy" / "catalogo_vectores.json",
         "brain": DATA_DIR / "easy" / "cerebro.pkl",
         "faiss_index": DATA_DIR / "easy" / "index.faiss",

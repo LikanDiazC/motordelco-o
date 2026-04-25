@@ -1,0 +1,5626 @@
+{
+    "n_productos": 3642,
+    "n_clusters": 95,
+    "n_ruido": 415,
+    "parametros": {
+        "umap": {
+            "n_neighbors": 50,
+            "n_components": 8,
+            "min_dist": 0.0,
+            "metric": "cosine"
+        },
+        "hdbscan": {
+            "min_cluster_size": 15,
+            "min_samples": 3,
+            "metric": "euclidean"
+        }
+    },
+    "clusters": [
+        {
+            "cluster_id": 51,
+            "tamano": 129,
+            "por_tienda": {
+                "sodimac": 64,
+                "easy": 65
+            },
+            "mix_tiendas": 0.98,
+            "categoria_top": "general",
+            "categorias_top3": [
+                [
+                    "general",
+                    72
+                ],
+                [
+                    "tornillos",
+                    53
+                ],
+                [
+                    "pernos",
+                    4
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    52
+                ],
+                [
+                    "plástico",
+                    4
+                ],
+                [
+                    "fierro fundido",
+                    4
+                ]
+            ],
+            "largo_mm_medio": 101.6,
+            "diam_mm_medio": 7.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "149226640",
+                    "titulo": "Muñequera Magnetica mas 2 Bolsillos Sujetar Tornillos y Mas",
+                    "largo_mm": 380.0,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146665725",
+                    "titulo": "Tornillo lenteja 8x11/4\" punta broca",
+                    "largo_mm": 69.85,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146667948",
+                    "titulo": "Tornillo lenteja 8x15/8\" punta broca",
+                    "largo_mm": 47.62,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146665537",
+                    "titulo": "Tornillo lenteja 8x1/2\" punta fina",
+                    "largo_mm": 12.7,
+                    "diametro_mm": 8.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 62,
+            "tamano": 127,
+            "por_tienda": {
+                "sodimac": 1,
+                "easy": 126
+            },
+            "mix_tiendas": 0.01,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    121
+                ],
+                [
+                    "general",
+                    6
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    48
+                ],
+                [
+                    "fierro",
+                    22
+                ],
+                [
+                    "metal",
+                    15
+                ]
+            ],
+            "largo_mm_medio": 31.75,
+            "diam_mm_medio": 6.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "110300606",
+                    "titulo": "Tarugo volcanita autoperforante 15 mm 4 unidades",
+                    "largo_mm": 15.0,
+                    "diametro_mm": 15.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "239138",
+                    "titulo": "Tornillo volcanita rosca gruesa crs 6x1.1/4'' zc c100 Imporper",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "911648",
+                    "titulo": "Tornillo volc rosca gruesa zbr 6 x 2 200un Mamut",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "215731",
+                    "titulo": "Tornillo volcanita hilo fino zincado 6 x 1 1/4 100 unidades Imporper",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 6.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 45,
+            "tamano": 124,
+            "por_tienda": {
+                "sodimac": 123,
+                "easy": 1
+            },
+            "mix_tiendas": 0.01,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    124
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    103
+                ],
+                [
+                    "acero inoxidable",
+                    15
+                ],
+                [
+                    "acero/plástico",
+                    2
+                ]
+            ],
+            "largo_mm_medio": 40.0,
+            "diam_mm_medio": 4.8,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "110311544",
+                    "titulo": "Tornillo Tirafondo Madera 2 \" 8 mm 144 unidad(es)",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112857454",
+                    "titulo": "Tornillo Tirafondo Madera 1/2 \" 3/16 \" 4 unidad(es)",
+                    "largo_mm": 12.7,
+                    "diametro_mm": 4.76
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112857242",
+                    "titulo": "Tornillo Tirafondo Metal 4 \" 3/8 \" 4 unidad(es)",
+                    "largo_mm": 101.6,
+                    "diametro_mm": 9.52
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112857386",
+                    "titulo": "Tornillo Tirafondo Madera 28 mm 3.9 mm 4 unidad(es)",
+                    "largo_mm": 28.0,
+                    "diametro_mm": 3.9
+                }
+            ]
+        },
+        {
+            "cluster_id": 38,
+            "tamano": 117,
+            "por_tienda": {
+                "sodimac": 28,
+                "easy": 89
+            },
+            "mix_tiendas": 0.31,
+            "categoria_top": "cementos",
+            "categorias_top3": [
+                [
+                    "cementos",
+                    56
+                ],
+                [
+                    "general",
+                    44
+                ],
+                [
+                    "pinturas",
+                    17
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "liquido",
+                    12
+                ],
+                [
+                    "cemento",
+                    6
+                ],
+                [
+                    "polvo",
+                    6
+                ]
+            ],
+            "largo_mm_medio": 50.0,
+            "diam_mm_medio": 30.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "146708048",
+                    "titulo": "TACO ANCLAJE 3/8 X1 - 9/16 50 unidades",
+                    "largo_mm": 39.69,
+                    "diametro_mm": 0.38
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110303962",
+                    "titulo": "Mortero piso 25 kg",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110438173",
+                    "titulo": "Mortero de Maquillaje y reparación superficial",
+                    "largo_mm": 450.0,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110438157",
+                    "titulo": "Mortero Relleno Anclaje y Nivelación Grouting",
+                    "largo_mm": 450.0,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 48,
+            "tamano": 96,
+            "por_tienda": {
+                "sodimac": 89,
+                "easy": 7
+            },
+            "mix_tiendas": 0.08,
+            "categoria_top": "pinturas",
+            "categorias_top3": [
+                [
+                    "pinturas",
+                    95
+                ],
+                [
+                    "cementos",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acrílico",
+                    2
+                ]
+            ],
+            "largo_mm_medio": 20.18,
+            "diam_mm_medio": null,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "146573218",
+                    "titulo": "PINTURA LATEX ACRILICO BLANCO 1 GL GRUPO Transex",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110271222",
+                    "titulo": "Pintura Látex Extracubriente Tineta 4 galón(es) Mate Blanco",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110244422",
+                    "titulo": "Pintura Látex Tineta 4 galón(es) Mate Blanco",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110256162",
+                    "titulo": "Pintura Látex Acrílico 1 galón(es) Mate Blanco",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 42,
+            "tamano": 82,
+            "por_tienda": {
+                "easy": 82
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    81
+                ],
+                [
+                    "tornillos",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "metal",
+                    50
+                ],
+                [
+                    "acero",
+                    15
+                ],
+                [
+                    "fierro",
+                    15
+                ]
+            ],
+            "largo_mm_medio": 6.35,
+            "diam_mm_medio": 4.5,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "387889",
+                    "titulo": "Autoperforantes varios zb. #8 x 1''. Easy Fix",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "464092",
+                    "titulo": "Perno cocina cabeza cilindrica con tuerca zb. m4 x 30. Easy Fix",
+                    "largo_mm": 30.0,
+                    "diametro_mm": 4.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "464093",
+                    "titulo": "Perno cocina cabeza cilindrica con tuerca zb. m4 x 40. Easy Fix",
+                    "largo_mm": 40.0,
+                    "diametro_mm": 4.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "464094",
+                    "titulo": "Perno cocina cabeza cilindrica con tuerca zb. m5 x 10. Easy Fix",
+                    "largo_mm": 10.0,
+                    "diametro_mm": 5.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 79,
+            "tamano": 67,
+            "por_tienda": {
+                "easy": 67
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pinturas",
+            "categorias_top3": [
+                [
+                    "pinturas",
+                    67
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": 6.35,
+            "diam_mm_medio": null,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1164855",
+                    "titulo": "Látex 1 galón Constructor blanco Soquina",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1190540",
+                    "titulo": "Látex 1 tineta Extracubriente blanco mate Sipa",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1419469",
+                    "titulo": "Latex Cubre Mas blanco 13.6 litros",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1472604",
+                    "titulo": "Látex Línea Profesional Súper Cubriente blanco tineta",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 61,
+            "tamano": 64,
+            "por_tienda": {
+                "sodimac": 62,
+                "easy": 2
+            },
+            "mix_tiendas": 0.03,
+            "categoria_top": "pinturas",
+            "categorias_top3": [
+                [
+                    "pinturas",
+                    62
+                ],
+                [
+                    "general",
+                    1
+                ],
+                [
+                    "cementos",
+                    1
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": 98.17,
+            "diam_mm_medio": 6.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "146167332",
+                    "titulo": "Látex color Gris Perla mate 1 gl",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146167569",
+                    "titulo": "Látex color Marfil mate 10 lts.",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146167579",
+                    "titulo": "Látex color Blanco mate 10 lts.",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "147236762",
+                    "titulo": "Látex Constructor blanco 4 gal",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 67,
+            "tamano": 61,
+            "por_tienda": {
+                "easy": 61
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    59
+                ],
+                [
+                    "general",
+                    2
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    28
+                ],
+                [
+                    "metal",
+                    15
+                ],
+                [
+                    "fabricado en acero cementado y templado con recubrimiento zincado",
+                    3
+                ]
+            ],
+            "largo_mm_medio": 25.4,
+            "diam_mm_medio": 12.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1459833",
+                    "titulo": "Tornillo autoperforante con golilla #12x3'' 200 un",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 12.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1398196",
+                    "titulo": "Tornillo autoperforante Hexagonal con golilla 8x3/4\" 5 unidades",
+                    "largo_mm": 19.05,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1459832",
+                    "titulo": "Tornillo autoperforante con golilla #12x1-1/2'' 200 un",
+                    "largo_mm": 38.1,
+                    "diametro_mm": 12.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "236859",
+                    "titulo": "Tornillo autoperforante hexagonal con golilla y goma 10 x 1 Imporper",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 10.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 57,
+            "tamano": 59,
+            "por_tienda": {
+                "sodimac": 1,
+                "easy": 58
+            },
+            "mix_tiendas": 0.02,
+            "categoria_top": "pinturas",
+            "categorias_top3": [
+                [
+                    "pinturas",
+                    46
+                ],
+                [
+                    "general",
+                    13
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": 6.35,
+            "diam_mm_medio": null,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "130722360",
+                    "titulo": "ESMALTE 14 GAL BERMELLON SOQ PAJ",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1192530",
+                    "titulo": "Esmalte sintético 1/4 galón Cereluxe Aqua Tech negro semi brillante Ceresita",
+                    "largo_mm": 6.35,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "448228",
+                    "titulo": "Látex 1/4 galón Extracubriente blanco mate Sipa",
+                    "largo_mm": 6.35,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "103493",
+                    "titulo": "Esmalte sintético 1 galón Pajarito blanco brillante Soquina",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 63,
+            "tamano": 56,
+            "por_tienda": {
+                "sodimac": 12,
+                "easy": 44
+            },
+            "mix_tiendas": 0.27,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    55
+                ],
+                [
+                    "general",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    32
+                ],
+                [
+                    "acero templado",
+                    14
+                ],
+                [
+                    "metal",
+                    5
+                ]
+            ],
+            "largo_mm_medio": 41.27,
+            "diam_mm_medio": 6.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "126857481",
+                    "titulo": "Tornillo Volcanita Rosca Madera CRS Zinc 6 x 1 5/8 x 1000 Unidades",
+                    "largo_mm": 41.27,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "129090776",
+                    "titulo": "Tornillo Volcanita Rosca Madera CRS Negro 6 x 1 1/4 x 1000 Unidades",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "128483603",
+                    "titulo": "Tornillo Volcanita Rosca Madera CRS Zinc 6 x 1 x 1000 Unidades",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "128928511",
+                    "titulo": "Tornillo Volcanita Rosca Madera CRS Zinc 8 x 2 1/2 x 250 Unidades",
+                    "largo_mm": 63.5,
+                    "diametro_mm": 8.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 30,
+            "tamano": 50,
+            "por_tienda": {
+                "easy": 50
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    50
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    40
+                ],
+                [
+                    "metal",
+                    2
+                ],
+                [
+                    "fierro",
+                    2
+                ]
+            ],
+            "largo_mm_medio": 34.92,
+            "diam_mm_medio": 0.19,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "497683",
+                    "titulo": "Perno ranura combinada 1/8x1 con tuerca b5 Imporper",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 0.12
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "497715",
+                    "titulo": "Perno cab.plana 1/8x11/2 con tuerca b5 Imporper",
+                    "largo_mm": 139.7,
+                    "diametro_mm": 0.12
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "825775",
+                    "titulo": "Perno marquesa con tuerca 3/8x 4 bolsa 2 unidades Imporper",
+                    "largo_mm": 101.6,
+                    "diametro_mm": 0.38
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "497687",
+                    "titulo": "Perno ranura combinada 1/8x21/2 con tuerca b5 Imporper",
+                    "largo_mm": 10.5,
+                    "diametro_mm": 0.12
+                }
+            ]
+        },
+        {
+            "cluster_id": 58,
+            "tamano": 49,
+            "por_tienda": {
+                "sodimac": 49
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    49
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    44
+                ],
+                [
+                    "acero galvanizado",
+                    2
+                ],
+                [
+                    "acero galvanizado inoxidable",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 38.1,
+            "diam_mm_medio": 6.3,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "110295066",
+                    "titulo": "Tornillo Autoperforante Yeso-Cartón 2 \" 6 mm 200 unidad(es)",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110328195",
+                    "titulo": "Tornillo Autoperforante Yeso-Cartón 2 \" 6 mm 200 unidad(es)",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110311396",
+                    "titulo": "Tornillo Autoperforante Metal 2 \" 12 mm 100 unidad(es)",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 12.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "133017261",
+                    "titulo": "Tornillo Autoperforante Madera 35 mm 4.2 mm 100 unidad(es)",
+                    "largo_mm": 35.0,
+                    "diametro_mm": 4.2
+                }
+            ]
+        },
+        {
+            "cluster_id": 94,
+            "tamano": 49,
+            "por_tienda": {
+                "easy": 49
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    48
+                ],
+                [
+                    "general",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "metal",
+                    11
+                ],
+                [
+                    "acero",
+                    2
+                ],
+                [
+                    "acero/plástico",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 63.5,
+            "diam_mm_medio": 0.38,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "215727",
+                    "titulo": "Tornillo hilo fino 6 x 2 100 unidades Imporper",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "237393",
+                    "titulo": "Tornillo soberbio 3/16''x2 bolsa 12 unidades Imporper",
+                    "largo_mm": 4.76,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "807072",
+                    "titulo": "Tornillo escuadra 1/2'' con tarugo 6 mm blister 6 unidades Imporper",
+                    "largo_mm": 12.7,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "612569",
+                    "titulo": "Tornillo 7 x 7/16'' flamer punta fina negro x100 unidades Imporper",
+                    "largo_mm": 11.11,
+                    "diametro_mm": 7.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 66,
+            "tamano": 48,
+            "por_tienda": {
+                "easy": 48
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    46
+                ],
+                [
+                    "general",
+                    2
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero templado",
+                    25
+                ],
+                [
+                    "acero cementado y templado, recubrimiento l.l.s",
+                    6
+                ],
+                [
+                    "acero templado y cementado",
+                    6
+                ]
+            ],
+            "largo_mm_medio": 25.4,
+            "diam_mm_medio": 12.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "239130",
+                    "titulo": "Tornillo autoperforante hexagonal N°12 x 2'' con golilla y goma Imporper",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 12.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "238514",
+                    "titulo": "Tornillo autoperforante metal/madera N°10-12 x 2'' LLS Imporper",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 12.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "439167",
+                    "titulo": "Tornillo autoperforante metal/madera LLS N°10-12 x 1'' 100 unidades Imporper",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 12.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "215782",
+                    "titulo": "Tornillo autoperforante cabeza Truss con golilla 8 x 1'' zincado Imporper",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 8.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 23,
+            "tamano": 48,
+            "por_tienda": {
+                "easy": 48
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    48
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    42
+                ],
+                [
+                    "acero inoxidable",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 50.8,
+            "diam_mm_medio": 0.38,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "497599",
+                    "titulo": "Perno hexagonal G2 3/8x2 1/2 con tuerca 2 unidades Imporper",
+                    "largo_mm": 63.5,
+                    "diametro_mm": 0.38
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "497601",
+                    "titulo": "Perno hexagonal G2 3/8x3 con tuerca b2 Imporper",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 0.38
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "497544",
+                    "titulo": "Perno hexagonal G2 nc 1/4x1.1/4 z con tuerca b4 Imporper",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "387833",
+                    "titulo": "Perno hexagonal 3/8x6’’ con tuerca g2. Vhe",
+                    "largo_mm": 152.4,
+                    "diametro_mm": 0.38
+                }
+            ]
+        },
+        {
+            "cluster_id": 29,
+            "tamano": 47,
+            "por_tienda": {
+                "sodimac": 2,
+                "easy": 45
+            },
+            "mix_tiendas": 0.04,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    47
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "fierro",
+                    19
+                ],
+                [
+                    "acero",
+                    18
+                ]
+            ],
+            "largo_mm_medio": 7.94,
+            "diam_mm_medio": 0.25,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "145661653",
+                    "titulo": "PERNO EXPANSION IRISADO 1/4 X 2 1/2",
+                    "largo_mm": 63.5,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110322663",
+                    "titulo": "Perno U 5/16\" x 2 1/2\" x 1 3/8\" 1 unidad",
+                    "largo_mm": 7.94,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1164455",
+                    "titulo": "Perno coche 1/4x3'' tuerca + golilla negro Imporper",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1164085",
+                    "titulo": "Perno coche + tuerca + golilla 3/8 x 2 1/2'' zincado 20 unidades Imporper",
+                    "largo_mm": 63.5,
+                    "diametro_mm": 0.38
+                }
+            ]
+        },
+        {
+            "cluster_id": 6,
+            "tamano": 47,
+            "por_tienda": {
+                "easy": 47
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    47
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    44
+                ],
+                [
+                    "metal",
+                    3
+                ]
+            ],
+            "largo_mm_medio": 76.2,
+            "diam_mm_medio": 4.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "704220",
+                    "titulo": "Tornillo jet screw 3x25 b12 Imporper",
+                    "largo_mm": 25.0,
+                    "diametro_mm": 3.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "704221",
+                    "titulo": "Tornillo jet screw 3.5x20 b12 Imporper",
+                    "largo_mm": 20.0,
+                    "diametro_mm": 3.5
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "704235",
+                    "titulo": "Tornillo Jet Screw N°5 x 5 cm 6 unidades Imporper",
+                    "largo_mm": 127.0,
+                    "diametro_mm": 5.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "704253",
+                    "titulo": "Tornillo Jet Screw N°4 x 5 cm 144 unidades Imporper",
+                    "largo_mm": 127.0,
+                    "diametro_mm": 4.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 69,
+            "tamano": 46,
+            "por_tienda": {
+                "sodimac": 8,
+                "easy": 38
+            },
+            "mix_tiendas": 0.21,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    42
+                ],
+                [
+                    "general",
+                    3
+                ],
+                [
+                    "pinturas",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    11
+                ],
+                [
+                    "metal",
+                    10
+                ],
+                [
+                    "pvc",
+                    6
+                ]
+            ],
+            "largo_mm_medio": 25.4,
+            "diam_mm_medio": 6.5,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "148759834",
+                    "titulo": "Par de Tornillos reparadores cajas eléctricas de 50 - 62mm alto universal",
+                    "largo_mm": 62.0,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "144885469",
+                    "titulo": "Tornillo para techo 12x 3 12 50UN - Plateado",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 12.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "147018206",
+                    "titulo": "TAPA TORNILLO PVC PRESION HE 34 UN",
+                    "largo_mm": 400.0,
+                    "diametro_mm": 34.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110313970",
+                    "titulo": "Bolsa 25 Fijaciones Broche Para Deck Con Tornillo Raiser",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 36,
+            "tamano": 46,
+            "por_tienda": {
+                "easy": 46
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    46
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "metal",
+                    26
+                ],
+                [
+                    "acero",
+                    7
+                ]
+            ],
+            "largo_mm_medio": 63.5,
+            "diam_mm_medio": 0.31,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1081340",
+                    "titulo": "Tornilo tirafondo 1/4 x 3'' + tarugo + broca Imporper",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "387972",
+                    "titulo": "Tirafondo 3/8x2’’ cabeza hexagonal gris. Vhe",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 0.38
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "387956",
+                    "titulo": "Tirafondo 3/8x3’’ cabeza hexagonal gris. Vhe",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 0.38
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "387948",
+                    "titulo": "Tirafondo cabeza hexagonal. 5/16'' x 2''. Easy Fix",
+                    "largo_mm": 7.94,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 49,
+            "tamano": 42,
+            "por_tienda": {
+                "sodimac": 42
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    42
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    32
+                ],
+                [
+                    "revestimiento de zinc",
+                    4
+                ],
+                [
+                    "madera",
+                    4
+                ]
+            ],
+            "largo_mm_medio": 31.75,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "110295767",
+                    "titulo": "Tornillo drywall 6x1 1/4\"",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112472827",
+                    "titulo": "Tornillo 8x3 CRS Zincado x 100 unidades",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112472819",
+                    "titulo": "Tornillo 8x2 1/2 CRS Zincado X 500 Unidades",
+                    "largo_mm": 63.5,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "142281702",
+                    "titulo": "TORNILLO DRYWALL ZINCADO VOLCANITA-MADERA 4",
+                    "largo_mm": 4.0,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 77,
+            "tamano": 41,
+            "por_tienda": {
+                "sodimac": 41
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    41
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    40
+                ],
+                [
+                    "revestimiento de zinc",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 38.1,
+            "diam_mm_medio": 12.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "112472813",
+                    "titulo": "Tornillo 10x2 1/2 Hexagonal Punta Espada Autoperforante x 100 unidades",
+                    "largo_mm": 63.5,
+                    "diametro_mm": 10.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146963283",
+                    "titulo": "Tornillo Hexagonal Punta Broca 14x3 1/2 100 Und",
+                    "largo_mm": 88.9,
+                    "diametro_mm": 14.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "149089467",
+                    "titulo": "Tornillo Cabeza Hexagonal Cg Punta Broca 12-14x 1  100un",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 14.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146809748",
+                    "titulo": "Tornillo Hexagonal Punta Espada 12x1 1/2 pulgadas 100 unidades",
+                    "largo_mm": 38.1,
+                    "diametro_mm": 12.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 3,
+            "tamano": 41,
+            "por_tienda": {
+                "easy": 41
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    41
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    41
+                ]
+            ],
+            "largo_mm_medio": 63.5,
+            "diam_mm_medio": 0.31,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "237430",
+                    "titulo": "Tornillo Tirafondo 5/16 x 5''zincado 2 unidades Imporper.",
+                    "largo_mm": 127.0,
+                    "diametro_mm": 0.31
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "237443",
+                    "titulo": "Tornillo Tirafondo 3/8 x 3 1/2''zincado Imporper.",
+                    "largo_mm": 88.9,
+                    "diametro_mm": 0.38
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1081341",
+                    "titulo": "Tornillo tirafondo 1/4 x 2 1/2\" 6 unidades + tarugos + broca Imporper",
+                    "largo_mm": 63.5,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "237402",
+                    "titulo": "Tornillo Tirafondo 1/4 x 2 1/2''zincado Imporper",
+                    "largo_mm": 63.5,
+                    "diametro_mm": 0.25
+                }
+            ]
+        },
+        {
+            "cluster_id": 24,
+            "tamano": 41,
+            "por_tienda": {
+                "easy": 41
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    41
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "metal",
+                    30
+                ],
+                [
+                    "acero",
+                    6
+                ],
+                [
+                    "fierro",
+                    5
+                ]
+            ],
+            "largo_mm_medio": 7.94,
+            "diam_mm_medio": 0.31,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "387771",
+                    "titulo": "Perno hexagonal g2 con tuerca pv. 1/4'' x 2''. Easy Fix",
+                    "largo_mm": 6.35,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "387827",
+                    "titulo": "Perno hexagonal g2 con tuerca zb. 3/8'' x 2''. Easy Fix",
+                    "largo_mm": 9.52,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "387826",
+                    "titulo": "Perno hexagonal g2 con tuerca zb. 3/8'' x 1 1/2''. Easy Fix",
+                    "largo_mm": 9.52,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "387772",
+                    "titulo": "Perno hexagonal g2 con tuerca pv. 1/4'' x 2 1/2''. Easy Fix",
+                    "largo_mm": 6.35,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 16,
+            "tamano": 39,
+            "por_tienda": {
+                "sodimac": 16,
+                "easy": 23
+            },
+            "mix_tiendas": 0.7,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    39
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    37
+                ]
+            ],
+            "largo_mm_medio": 101.6,
+            "diam_mm_medio": 0.38,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "110277380",
+                    "titulo": "Perno 1/4 X 1\" + Tuerca+Gol 8U",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "148991770",
+                    "titulo": "Perno Coche 3/8 X 5 Zn (100 Unidades)",
+                    "largo_mm": 127.0,
+                    "diametro_mm": 0.38
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "149000873",
+                    "titulo": "Pack Perno Coche 5 /16 X 2 1 /2 + Tuerca 5/16 Zn (100 Unid)",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 16.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "148986685",
+                    "titulo": "Perno Coche 1/ 4x 5 /8 Zn (100 Unidades)",
+                    "largo_mm": 127.0,
+                    "diametro_mm": 4.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 84,
+            "tamano": 39,
+            "por_tienda": {
+                "sodimac": 4,
+                "easy": 35
+            },
+            "mix_tiendas": 0.11,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    38
+                ],
+                [
+                    "general",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "tarugo: nylon",
+                    8
+                ],
+                [
+                    "nylon/metal",
+                    3
+                ],
+                [
+                    "nylon",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 38.1,
+            "diam_mm_medio": 7.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "128247410",
+                    "titulo": "Tarugo - Clavo Tornillo SA6mm 100 unidades",
+                    "largo_mm": 6.0,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "128259252",
+                    "titulo": "Tarugo Duopower 8mm + Tornillo 5x45mm 25 unidades",
+                    "largo_mm": 45.0,
+                    "diametro_mm": 5.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "128388764",
+                    "titulo": "Tarugo Nylon SA6mm + Tornillos 4.5x35mm 10 unidades",
+                    "largo_mm": 35.0,
+                    "diametro_mm": 4.5
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "128247428",
+                    "titulo": "Tarugo Nylon SX6mm + Tornillos 4.5x35mm 4 unidades",
+                    "largo_mm": 35.0,
+                    "diametro_mm": 4.5
+                }
+            ]
+        },
+        {
+            "cluster_id": 25,
+            "tamano": 38,
+            "por_tienda": {
+                "sodimac": 38
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pinturas",
+            "categorias_top3": [
+                [
+                    "pinturas",
+                    38
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": 22.0,
+            "diam_mm_medio": null,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "143985011",
+                    "titulo": "ESMALTE AL AGUA BLANCO SATINADO TINETA BMAC",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "143985037",
+                    "titulo": "ESMALTE AL AGUA ROJO COLONIAL SEMIBRILLO TINETA 4G BMAC",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "143985077",
+                    "titulo": "LATEX ACRILICO CREMA TINETA 4G BMAC",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "143985067",
+                    "titulo": "LATEX ACRILICO BLANCO GALON BMAC",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 20,
+            "tamano": 38,
+            "por_tienda": {
+                "easy": 38
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    38
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": 25.4,
+            "diam_mm_medio": 0.19,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1258805",
+                    "titulo": "Perno cocina con tuerca 1/4x1'' zincado 20 unidades Arnik",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1107012",
+                    "titulo": "Perno cocina 1/8x3/4 + tuerca + golilla 15 unidades Mamut",
+                    "largo_mm": 19.05,
+                    "diametro_mm": 0.12
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1107013",
+                    "titulo": "Perno cocina 1/8x1 + tuerca + golilla 12 unidades Mamut",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 0.12
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1253713",
+                    "titulo": "Perno cocina con tuerca M8 x 50 mm zincado 2 unidades Arnik",
+                    "largo_mm": 50.0,
+                    "diametro_mm": 8.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 41,
+            "tamano": 37,
+            "por_tienda": {
+                "easy": 37
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    37
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    13
+                ],
+                [
+                    "fierro",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 101.6,
+            "diam_mm_medio": 0.31,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "906587",
+                    "titulo": "Perno coche pav con tuerca 5/16x11/2'' 20u Mamut",
+                    "largo_mm": 139.7,
+                    "diametro_mm": 0.31
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "906589",
+                    "titulo": "Perno coche pav con tuerca 5/16x21/2'' 20u Mamut",
+                    "largo_mm": 266.7,
+                    "diametro_mm": 0.31
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "906590",
+                    "titulo": "Perno coche pav con tuerca 5/16x3'' 20un Mamut",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 0.31
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1253510",
+                    "titulo": "Perno coche con tuerca 3/8x8'' zincado 10 unidades Mamut",
+                    "largo_mm": 203.2,
+                    "diametro_mm": 0.38
+                }
+            ]
+        },
+        {
+            "cluster_id": 71,
+            "tamano": 36,
+            "por_tienda": {
+                "easy": 36
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "general",
+            "categorias_top3": [
+                [
+                    "general",
+                    19
+                ],
+                [
+                    "cementos",
+                    16
+                ],
+                [
+                    "pinturas",
+                    1
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": null,
+            "diam_mm_medio": null,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1190545",
+                    "titulo": "Látex 1 tineta Constructor blanco Soquina",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "105425",
+                    "titulo": "Pasta muro 1 kg F-6 Vinílica Tajamar",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "105420",
+                    "titulo": "Pasta muro 1 galón F-15 Vinílica blanco Tajamar",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "105802",
+                    "titulo": "Textura Sipalina 1 gl blanco",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 47,
+            "tamano": 35,
+            "por_tienda": {
+                "sodimac": 35
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    34
+                ],
+                [
+                    "tornillos",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    30
+                ],
+                [
+                    "plástico",
+                    2
+                ],
+                [
+                    "bronce",
+                    2
+                ]
+            ],
+            "largo_mm_medio": 25.4,
+            "diam_mm_medio": 0.19,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "112751846",
+                    "titulo": "Perno cabeza plana phillips 5/32 x 3/4 zincado 4 unid",
+                    "largo_mm": 19.05,
+                    "diametro_mm": 0.16
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112751722",
+                    "titulo": "Perno cabeza plana phillips 3/16 x 1\" zincado 4 unid",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 0.19
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "113208252",
+                    "titulo": "Perno manilla estrella M5 x 35 mm 1 unid",
+                    "largo_mm": 35.0,
+                    "diametro_mm": 5.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112751784",
+                    "titulo": "Perno cabeza redonda bronce unc 3/16 x 1\" 2 unid",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 0.19
+                }
+            ]
+        },
+        {
+            "cluster_id": 87,
+            "tamano": 35,
+            "por_tienda": {
+                "easy": 35
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    35
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    14
+                ],
+                [
+                    "metal",
+                    14
+                ],
+                [
+                    "fierro",
+                    6
+                ]
+            ],
+            "largo_mm_medio": 25.4,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "436321",
+                    "titulo": "Roscalata binding punta broca 6-1’’ zbr 10unid. Easy Fix",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "436326",
+                    "titulo": "Roscalata binding punta broca 8-1/2’’ zbr 10unid. Easy Fix",
+                    "largo_mm": 12.7,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "387847",
+                    "titulo": "Roscalata binding r/c zb. #6 x 2''. Easy Fix",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "387855",
+                    "titulo": "Roscalata binding r/c zb. #8 x 2''. Easy Fix",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 8.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 10,
+            "tamano": 34,
+            "por_tienda": {
+                "sodimac": 34
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    34
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    28
+                ],
+                [
+                    "acero inoxidable",
+                    3
+                ],
+                [
+                    "revestimiento de zinc",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 25.4,
+            "diam_mm_medio": 6.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "122201311",
+                    "titulo": "TORNILLO CRS ZINCADO 6X1 1/4 1000 UNIDADES",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112922097",
+                    "titulo": "Tornillo Roscalata Metal 3/8 \" 3.5 mm 5 unidad(es)",
+                    "largo_mm": 9.52,
+                    "diametro_mm": 3.5
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112921979",
+                    "titulo": "Tornillo Roscalata Metal 1/4 \" 4.1 mm 5 unidad(es)",
+                    "largo_mm": 6.35,
+                    "diametro_mm": 4.1
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110304752",
+                    "titulo": "Tornillo Roscalata Metal 3/4 \" 8 mm 500 unidad(es)",
+                    "largo_mm": 19.05,
+                    "diametro_mm": 8.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 68,
+            "tamano": 34,
+            "por_tienda": {
+                "easy": 34
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    33
+                ],
+                [
+                    "general",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero endurecido",
+                    32
+                ],
+                [
+                    "acero",
+                    1
+                ],
+                [
+                    "acero templado",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 25.4,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "237488",
+                    "titulo": "Roscalata ranura combinada N°4 x 3/4'' 10 unidades Imporper",
+                    "largo_mm": 19.05,
+                    "diametro_mm": 4.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "237490",
+                    "titulo": "Roscalata ranura combinada N°6 x 3/8'' 10 unidades Imporper",
+                    "largo_mm": 9.52,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "237492",
+                    "titulo": "Tornillo Roscalata N°6 x 5/8'' ranura combinada 10 unidades Imporper",
+                    "largo_mm": 15.88,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "238003",
+                    "titulo": "Roscalata ranura combinada N°8 x 1'' 10 unidades Imporper",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 8.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 28,
+            "tamano": 33,
+            "por_tienda": {
+                "sodimac": 33
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    33
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    32
+                ],
+                [
+                    "zincado brillante",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 40.0,
+            "diam_mm_medio": 6.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "112740424",
+                    "titulo": "Perno hexagonal métrico 8.8 c/tuerca M6 x 70 mm zincado 2 unid",
+                    "largo_mm": 70.0,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112740512",
+                    "titulo": "Perno hexagonal métrico 8.8 c/tuerca M10 x 60 mm zincado 2 unid",
+                    "largo_mm": 60.0,
+                    "diametro_mm": 10.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112740553",
+                    "titulo": "Perno hexagonal métrico 8.8 c/tuerca M8 x 40 mm zincado 2 unid",
+                    "largo_mm": 40.0,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112744096",
+                    "titulo": "Perno hexagonal métrico 8.8 c/tuerca M10 x 40 mm zincado 2 unid",
+                    "largo_mm": 40.0,
+                    "diametro_mm": 10.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 21,
+            "tamano": 31,
+            "por_tienda": {
+                "easy": 31
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    31
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "fierro",
+                    16
+                ],
+                [
+                    "acero",
+                    6
+                ]
+            ],
+            "largo_mm_medio": 76.2,
+            "diam_mm_medio": 0.31,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1185021",
+                    "titulo": "Perno hexagonal con tuerca 5/16x1 1/4'' pavonado 20 unidades Mamut",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 0.31
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "906631",
+                    "titulo": "Perno hexagonal pavonado con tuerca 1/4x2 1/2'' 20 unidades Mamut",
+                    "largo_mm": 63.5,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "693355",
+                    "titulo": "Perno hexagonal 6x15mm con tuerca milimétrico. Abb",
+                    "largo_mm": 15.0,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "906640",
+                    "titulo": "Perno hexagonal con tuerca 5/16x3'' pavonado 20 unidades Mamut",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 0.31
+                }
+            ]
+        },
+        {
+            "cluster_id": 32,
+            "tamano": 30,
+            "por_tienda": {
+                "sodimac": 2,
+                "easy": 28
+            },
+            "mix_tiendas": 0.07,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    30
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    24
+                ]
+            ],
+            "largo_mm_medio": 60.0,
+            "diam_mm_medio": 14.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "128962255",
+                    "titulo": "Tornillo Turbo Screw #14(6) X 100/60 X 100 Und",
+                    "largo_mm": 100.0,
+                    "diametro_mm": 14.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "147024016",
+                    "titulo": "Tornillo Turbo Screw #10(5) X 50/50 X 100 Und",
+                    "largo_mm": 100.0,
+                    "diametro_mm": 10.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1399087",
+                    "titulo": "Tornillo turbo screw torx 14[6]x140 mm 3 un.",
+                    "largo_mm": 140.0,
+                    "diametro_mm": 14.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1187781",
+                    "titulo": "Tornillo turbo screw #10 5,0x60 mm zincado 24 unidades Mamut",
+                    "largo_mm": 60.0,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 73,
+            "tamano": 30,
+            "por_tienda": {
+                "sodimac": 1,
+                "easy": 29
+            },
+            "mix_tiendas": 0.03,
+            "categoria_top": "general",
+            "categorias_top3": [
+                [
+                    "general",
+                    19
+                ],
+                [
+                    "tornillos",
+                    11
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    15
+                ],
+                [
+                    "fierro",
+                    8
+                ],
+                [
+                    "metal",
+                    3
+                ]
+            ],
+            "largo_mm_medio": 25.4,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "145432728",
+                    "titulo": "Kit Atornillador Inalambrico Taladro Atornillador",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "440781",
+                    "titulo": "Autoperf.cab.binding pta.br zb #8 1 Mamut",
+                    "largo_mm": 25.4,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "440776",
+                    "titulo": "Autoperf.cab.binding pta.br zb #6 1/2 Mamut",
+                    "largo_mm": 165.1,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "593568",
+                    "titulo": "Tornillo autoperforante 3/4 x 12 Arar",
+                    "largo_mm": 12.0,
+                    "diametro_mm": 0.75
+                }
+            ]
+        },
+        {
+            "cluster_id": 53,
+            "tamano": 29,
+            "por_tienda": {
+                "sodimac": 29
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    29
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    28
+                ]
+            ],
+            "largo_mm_medio": 38.1,
+            "diam_mm_medio": 0.25,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "112865825",
+                    "titulo": "Perno coche con tuerca 3/16 x 1 1/4 zincado amarillo 4unid",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 0.19
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112865776",
+                    "titulo": "Perno coche con tuerca 1/4 x 2\" zincado amarillo 4unid",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112865791",
+                    "titulo": "Perno coche con tuerca 1/4 x 2 1/2 zincado amarillo 4unid",
+                    "largo_mm": 63.5,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112857384",
+                    "titulo": "Esparrago rosc.madera/madera 1/4x2.1/2 zincado brillante 2unid",
+                    "largo_mm": 12.7,
+                    "diametro_mm": 0.25
+                }
+            ]
+        },
+        {
+            "cluster_id": 4,
+            "tamano": 29,
+            "por_tienda": {
+                "sodimac": 29
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    29
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    29
+                ]
+            ],
+            "largo_mm_medio": 38.1,
+            "diam_mm_medio": 0.31,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "112744088",
+                    "titulo": "Perno cab.hexagonal g8.unc con tuerca 1/4 x 3\" pavonado 2 unid",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112740410",
+                    "titulo": "Perno cab.hexagonal g8.unc con tuerca 1/4 x 1 1/4 pavonado 2 unid",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112744134",
+                    "titulo": "Perno cab.hexagonal g8.unc con tuerca 5/16 x 3\" pavonado 2 unid",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 0.31
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112744162",
+                    "titulo": "Perno cab.hexagonal g8.unc con tuerca 1/4 x 3 1/2 pavonado 2 unid",
+                    "largo_mm": 88.9,
+                    "diametro_mm": 0.25
+                }
+            ]
+        },
+        {
+            "cluster_id": 19,
+            "tamano": 29,
+            "por_tienda": {
+                "sodimac": 29
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    29
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    29
+                ]
+            ],
+            "largo_mm_medio": 76.2,
+            "diam_mm_medio": 0.38,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "146668089",
+                    "titulo": "Perno hexagonal negro 14x1 100uds",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 14.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146670551",
+                    "titulo": "Perno hexagonal negro 14x112 100uds",
+                    "largo_mm": 112.0,
+                    "diametro_mm": 14.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146668794",
+                    "titulo": "Perno hexagonal negro 5/16x3/4\" 20uds.",
+                    "largo_mm": 19.05,
+                    "diametro_mm": 0.31
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146669633",
+                    "titulo": "Perno hexagonal negro 3/8x4\" con tuerca 10uds",
+                    "largo_mm": 101.6,
+                    "diametro_mm": 0.38
+                }
+            ]
+        },
+        {
+            "cluster_id": 31,
+            "tamano": 28,
+            "por_tienda": {
+                "sodimac": 27,
+                "easy": 1
+            },
+            "mix_tiendas": 0.04,
+            "categoria_top": "pinturas",
+            "categorias_top3": [
+                [
+                    "pinturas",
+                    28
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": 6.35,
+            "diam_mm_medio": null,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "127177212",
+                    "titulo": "LATEX 1/4 GAL SOL TAJ",
+                    "largo_mm": 6.35,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "127177222",
+                    "titulo": "LATEX 14 GAL MARFIL TAJ",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "150849790",
+                    "titulo": "Látex Acrilico Blanco Invierno Tineta",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "150849861",
+                    "titulo": "Látex Acrilico Damasco Galón",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 60,
+            "tamano": 28,
+            "por_tienda": {
+                "easy": 28
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    28
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero zincado dicromatado",
+                    28
+                ]
+            ],
+            "largo_mm_medio": 25.0,
+            "diam_mm_medio": 5.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "237622",
+                    "titulo": "Tornillo multiuso 5 x 75 mm (N°10 x 3'') 6 unidades Imporper",
+                    "largo_mm": 75.0,
+                    "diametro_mm": 5.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "238452",
+                    "titulo": "Tornillo multiuso 3 x 25 mm (N°5 x 1'') 144 unidades Imporper",
+                    "largo_mm": 25.0,
+                    "diametro_mm": 3.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "237610",
+                    "titulo": "Tornillo multiuso 4,5 x 25 mm (N°9 x 1'') 12 unidades Imporper",
+                    "largo_mm": 25.0,
+                    "diametro_mm": 5.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "237602",
+                    "titulo": "Tornillo multiuso 4 x 20 mm (N°8 x 3/4'') 12 unidades Imporper",
+                    "largo_mm": 20.0,
+                    "diametro_mm": 4.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 80,
+            "tamano": 27,
+            "por_tienda": {
+                "easy": 27
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pinturas",
+            "categorias_top3": [
+                [
+                    "pinturas",
+                    26
+                ],
+                [
+                    "general",
+                    1
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": 6.35,
+            "diam_mm_medio": null,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1203718",
+                    "titulo": "Esmalte al agua interior blanco satin Behr Premium Tineta",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1061517",
+                    "titulo": "Esmalte al agua interior blanco mate Behr Premium Galón",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1061528",
+                    "titulo": "Esmalte al agua interior Semi-Satinado blanco Behr Premium Plus 1/4 Galón (litro)",
+                    "largo_mm": 6.35,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1154844",
+                    "titulo": "Látex 1 galón G110 blanco mate Behr",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 9,
+            "tamano": 26,
+            "por_tienda": {
+                "easy": 26
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "general",
+            "categorias_top3": [
+                [
+                    "general",
+                    26
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "mdf | flexilam",
+                    18
+                ],
+                [
+                    "madera mdf",
+                    6
+                ],
+                [
+                    "mdf hr",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 200.0,
+            "diam_mm_medio": 80.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1260881",
+                    "titulo": "Puerta Interior Milano MDF Horizontal 70x200 cm Igal",
+                    "largo_mm": 200.0,
+                    "diametro_mm": 70.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1260882",
+                    "titulo": "Puerta Interior Milano MDF Horizontal 75x200 cm Igal",
+                    "largo_mm": 200.0,
+                    "diametro_mm": 75.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1493158",
+                    "titulo": "Puerta MDF/flexilam 65x200 cm",
+                    "largo_mm": 200.0,
+                    "diametro_mm": 65.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1260883",
+                    "titulo": "Puerta Interior Milano MDF Horizontal 80x200 cm Igal",
+                    "largo_mm": 200.0,
+                    "diametro_mm": 80.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 34,
+            "tamano": 24,
+            "por_tienda": {
+                "sodimac": 16,
+                "easy": 8
+            },
+            "mix_tiendas": 0.5,
+            "categoria_top": "maderas",
+            "categorias_top3": [
+                [
+                    "maderas",
+                    23
+                ],
+                [
+                    "general",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "mdf",
+                    5
+                ],
+                [
+                    "mdf recubierto",
+                    1
+                ],
+                [
+                    "tablero mdf pintado",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 50.8,
+            "diam_mm_medio": 46.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "146294994",
+                    "titulo": "Tablero MDF 5,5mm 2,12x2,44mt",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 12.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146297773",
+                    "titulo": "Tablero MDF 9mm 1,52x2,44mt",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 52.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146670506",
+                    "titulo": "Tablero MDF 3mm 2,12x2,44mt",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 12.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "145688770",
+                    "titulo": "Tablero MDF melamina blanco 2C 15mm 1,83x2,50mt",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 83.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 59,
+            "tamano": 24,
+            "por_tienda": {
+                "easy": 24
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    23
+                ],
+                [
+                    "general",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero zincado dicromatado",
+                    23
+                ]
+            ],
+            "largo_mm_medio": 40.0,
+            "diam_mm_medio": 5.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "238471",
+                    "titulo": "Tornillo multiuso 4,5 x 60 mm (N°9 x 2 1/2'') 144 unidades Imporper",
+                    "largo_mm": 60.0,
+                    "diametro_mm": 5.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "239064",
+                    "titulo": "Tornillo multiuso 5 x 40 mm (N°10 x 1 1/2'') 144 unidades Imporper",
+                    "largo_mm": 40.0,
+                    "diametro_mm": 5.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "238462",
+                    "titulo": "Tornillo multiuso 4 x 40 mm (N°8 x 1 1/2'') 144 unidades Imporper",
+                    "largo_mm": 40.0,
+                    "diametro_mm": 4.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "238464",
+                    "titulo": "Tornillo multiuso 4 x 60 mm (N°8 x 2 1/2'') 144 unidades Imporper",
+                    "largo_mm": 60.0,
+                    "diametro_mm": 4.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 93,
+            "tamano": 24,
+            "por_tienda": {
+                "easy": 24
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    24
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "plástico",
+                    7
+                ],
+                [
+                    "fierro",
+                    3
+                ],
+                [
+                    "acero",
+                    2
+                ]
+            ],
+            "largo_mm_medio": 50.4,
+            "diam_mm_medio": 5.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "612562",
+                    "titulo": "Tornillo vol h.fino 6x1 bal1000u+pta phip#2 Imporper",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "237607",
+                    "titulo": "Tornillo multiuso 4.0x50 (8x2'') b12 Imporper",
+                    "largo_mm": 50.0,
+                    "diametro_mm": 4.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "238513",
+                    "titulo": "Tornillo autop met/mad 12x1.1/2 Imporper",
+                    "largo_mm": null,
+                    "diametro_mm": 12.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "237621",
+                    "titulo": "Tornillo multiuso 5.0x60 (10x2.1/2) b6 Imporper",
+                    "largo_mm": 60.0,
+                    "diametro_mm": 5.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 89,
+            "tamano": 23,
+            "por_tienda": {
+                "sodimac": 1,
+                "easy": 22
+            },
+            "mix_tiendas": 0.05,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    17
+                ],
+                [
+                    "pernos",
+                    5
+                ],
+                [
+                    "general",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "metal",
+                    9
+                ],
+                [
+                    "acero",
+                    8
+                ],
+                [
+                    "fierro",
+                    4
+                ]
+            ],
+            "largo_mm_medio": 40.0,
+            "diam_mm_medio": 4.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "146669770",
+                    "titulo": "Perno anclaje 3/8x3,1/2\" 10uds",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 0.38
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "144550",
+                    "titulo": "Tornillo madera zi aglomerado. 3 x 16 Mamut",
+                    "largo_mm": 16.0,
+                    "diametro_mm": 3.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "388543",
+                    "titulo": "Tornillo madera tsc zam.#9 (4.5) x 1 1/4''. Vhe",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 1.25
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "144560",
+                    "titulo": "Tornillo madera zi aglomerado. 4 x 30 Mamut",
+                    "largo_mm": 30.0,
+                    "diametro_mm": 4.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 27,
+            "tamano": 23,
+            "por_tienda": {
+                "sodimac": 23
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    23
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    22
+                ]
+            ],
+            "largo_mm_medio": 114.3,
+            "diam_mm_medio": 0.5,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "145553480",
+                    "titulo": "PERNO HEXAGONO 12X5",
+                    "largo_mm": 127.0,
+                    "diametro_mm": 12.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "145553388",
+                    "titulo": "PERNO HEXAGONO 5/16X 1 1/2",
+                    "largo_mm": 38.1,
+                    "diametro_mm": 0.31
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "145553437",
+                    "titulo": "PERNO HEXAGONO 38X4 pulgares",
+                    "largo_mm": 101.6,
+                    "diametro_mm": 38.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "145553384",
+                    "titulo": "PERNO HEXAGONO 14X5",
+                    "largo_mm": 127.0,
+                    "diametro_mm": 14.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 39,
+            "tamano": 23,
+            "por_tienda": {
+                "easy": 23
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "general",
+            "categorias_top3": [
+                [
+                    "general",
+                    23
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "spc",
+                    4
+                ],
+                [
+                    "maicillo",
+                    1
+                ],
+                [
+                    "arcilla",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 120.0,
+            "diam_mm_medio": 60.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1268752",
+                    "titulo": "Gravilla 18 litros",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1268753",
+                    "titulo": "Arena fina 18 litros",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1268751",
+                    "titulo": "Arena gruesa 18 litros",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "183566",
+                    "titulo": "Maicillo arneado 25 kilos FVH",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 14,
+            "tamano": 22,
+            "por_tienda": {
+                "sodimac": 22
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    22
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero inoxidable",
+                    22
+                ]
+            ],
+            "largo_mm_medio": 34.92,
+            "diam_mm_medio": 0.31,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "112752020",
+                    "titulo": "Perno hexagonal ac. inoxidable unc c/tuerca 3/8 x 1 1/4 2 unid",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 0.38
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112752024",
+                    "titulo": "Perno hexagonal ac. inoxidable unc c/tuerca 1/4 x 2\" 2 unid",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112752004",
+                    "titulo": "Perno hexagonal ac. inoxidable unc c/tuerca 5/16 x 1 1/4 2 unid",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 0.31
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112751583",
+                    "titulo": "Perno hexagonal ac. inoxidable unc c/tuerca 5/16 x 3/4 2 unid",
+                    "largo_mm": 19.05,
+                    "diametro_mm": 0.31
+                }
+            ]
+        },
+        {
+            "cluster_id": 15,
+            "tamano": 22,
+            "por_tienda": {
+                "sodimac": 22
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    22
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero inoxidable",
+                    22
+                ]
+            ],
+            "largo_mm_medio": 30.0,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "112752000",
+                    "titulo": "Perno hexagonal métrico acero inoxid. c/tuerca M6 x 50 2 unid",
+                    "largo_mm": 50.0,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112752175",
+                    "titulo": "Perno hexagonal métrico acero inoxid. c/tuerca M8 x 25 2 unid",
+                    "largo_mm": 25.0,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112752121",
+                    "titulo": "Perno hexagonal métrico acero inoxid. c/tuerca M6 x 30 2 unid",
+                    "largo_mm": 30.0,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112752118",
+                    "titulo": "Perno hexagonal métrico acero inoxid. c/tuerca M10 x 25 2 unid",
+                    "largo_mm": 25.0,
+                    "diametro_mm": 10.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 12,
+            "tamano": 22,
+            "por_tienda": {
+                "sodimac": 22
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    22
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    22
+                ]
+            ],
+            "largo_mm_medio": 47.5,
+            "diam_mm_medio": 4.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "110329629",
+                    "titulo": "Tornillo Tirafondo Madera Aglomerada 45 mm 3.5 mm 100 unidad(es)",
+                    "largo_mm": 45.0,
+                    "diametro_mm": 3.5
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110321605",
+                    "titulo": "Tornillo Tirafondo Madera Aglomerada 35 mm 4 mm 50 unidad(es)",
+                    "largo_mm": 35.0,
+                    "diametro_mm": 4.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110309456",
+                    "titulo": "Tornillo Tirafondo Madera Aglomerada 50 mm 4 mm 100 unidad(es)",
+                    "largo_mm": 50.0,
+                    "diametro_mm": 4.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110275225",
+                    "titulo": "Tornillo Tirafondo Madera Aglomerada 35 mm 4 mm 400 unidad(es)",
+                    "largo_mm": 35.0,
+                    "diametro_mm": 4.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 0,
+            "tamano": 22,
+            "por_tienda": {
+                "sodimac": 22
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    22
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    22
+                ]
+            ],
+            "largo_mm_medio": 50.8,
+            "diam_mm_medio": 4.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "149001584",
+                    "titulo": "Pack Perno Coche 1/2x 2 Negro Tuerca Y Golilla (100 Un)",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 0.5
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "149004294",
+                    "titulo": "Pack Perno Coche 3 /8x 1 Negro Tuerca Y Golilla (100 Un)",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "149006895",
+                    "titulo": "Pack Perno Coche 1/4x 3 Negro Tuerca Y Golilla (100 Un)",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "149004363",
+                    "titulo": "Pack Perno Coche 1 /2 x 6 Negro Tuerca Y Golilla (100 Un)",
+                    "largo_mm": 152.4,
+                    "diametro_mm": 2.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 55,
+            "tamano": 21,
+            "por_tienda": {
+                "sodimac": 21
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    21
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    21
+                ]
+            ],
+            "largo_mm_medio": 45.0,
+            "diam_mm_medio": 5.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "146670839",
+                    "titulo": "Tornillo aglomerado 3,5x40\" 500uds",
+                    "largo_mm": 1016.0,
+                    "diametro_mm": 5.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146670843",
+                    "titulo": "Tornillo aglomerado 3,5x50\" 500uds",
+                    "largo_mm": 1270.0,
+                    "diametro_mm": 5.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146668784",
+                    "titulo": "Tornillo aglomerado 3,5x30\" 500uds",
+                    "largo_mm": 762.0,
+                    "diametro_mm": 5.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146670835",
+                    "titulo": "Tornillo aglomerado 3,5x15\" 1000uds",
+                    "largo_mm": 381.0,
+                    "diametro_mm": 5.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 54,
+            "tamano": 21,
+            "por_tienda": {
+                "sodimac": 19,
+                "easy": 2
+            },
+            "mix_tiendas": 0.11,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    19
+                ],
+                [
+                    "general",
+                    2
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    18
+                ],
+                [
+                    "cuerpo de aluminio",
+                    2
+                ],
+                [
+                    "metal",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 45.0,
+            "diam_mm_medio": 3.5,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "146666007",
+                    "titulo": "Tornillo perforante 1/4x3\" 5uds",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146667958",
+                    "titulo": "Tornillo perforante 3/4x12\" 15uds",
+                    "largo_mm": 304.8,
+                    "diametro_mm": 0.75
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146666005",
+                    "titulo": "Tornillo perforante 2x12\" 10uds",
+                    "largo_mm": 304.8,
+                    "diametro_mm": 2.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "147943036",
+                    "titulo": "Tornillo aglomerado 5x70 bolsa 100un",
+                    "largo_mm": 70.0,
+                    "diametro_mm": 5.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 46,
+            "tamano": 21,
+            "por_tienda": {
+                "sodimac": 18,
+                "easy": 3
+            },
+            "mix_tiendas": 0.17,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    16
+                ],
+                [
+                    "general",
+                    5
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    8
+                ],
+                [
+                    "acero galvanizado inoxidable",
+                    5
+                ],
+                [
+                    "hierro",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 19.0,
+            "diam_mm_medio": 14.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "136458406",
+                    "titulo": "Juego Dados Torx Hembra 1/2\" E10 a E24 7pz 4071",
+                    "largo_mm": 12.7,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "147974963",
+                    "titulo": "SET 115 PCS DESTORNILLADORES PRECISIÓN TORX MAGNÉTICOS",
+                    "largo_mm": 0.5,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "131211862",
+                    "titulo": "Set Dados Extractores Pernos Y Tuercas Rodadas 9 A 19mm",
+                    "largo_mm": 19.0,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "147097406",
+                    "titulo": "Set Dados Extractores Pernos Y Tuercas Rodadas 9 A 19mm",
+                    "largo_mm": 19.0,
+                    "diametro_mm": 9.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 92,
+            "tamano": 21,
+            "por_tienda": {
+                "easy": 21
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    21
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "metal",
+                    12
+                ],
+                [
+                    "fierro",
+                    4
+                ],
+                [
+                    "acero",
+                    4
+                ]
+            ],
+            "largo_mm_medio": 15.88,
+            "diam_mm_medio": 4.5,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "436336",
+                    "titulo": "Tornillo madera aglomerada. #9 x 3''. Easy Fix",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 9.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "388512",
+                    "titulo": "Tornillo madera aglomerada. #5 (3.0) x 3/4''. Easy Fix",
+                    "largo_mm": 19.05,
+                    "diametro_mm": 3.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "388511",
+                    "titulo": "Tornillo madera aglomerada. #5 (3.0) x 1/2''. Easy Fix",
+                    "largo_mm": 12.7,
+                    "diametro_mm": 3.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "388513",
+                    "titulo": "Tornillo madera aglomerada. #5 (3.0) x 1''. Easy Fix",
+                    "largo_mm": 1.0,
+                    "diametro_mm": 3.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 72,
+            "tamano": 21,
+            "por_tienda": {
+                "easy": 21
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    21
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    9
+                ],
+                [
+                    "metal",
+                    8
+                ],
+                [
+                    "fierro",
+                    2
+                ]
+            ],
+            "largo_mm_medio": 19.05,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "891121",
+                    "titulo": "Tornillo autoperforante fibrocemento 10 unidades cromado Imporper",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1474400",
+                    "titulo": "Tornillo autoperforante punta broca 02TADB-ET 6x1 1/4",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "731150",
+                    "titulo": "Tornillo autoperforante madera c/gol 12x 2 b 5 Imporper",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 12.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "556710",
+                    "titulo": "Tornillo autoperforante framer p/f. 7 x 7/16'' Mamut",
+                    "largo_mm": 11.11,
+                    "diametro_mm": 7.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 44,
+            "tamano": 21,
+            "por_tienda": {
+                "easy": 21
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    17
+                ],
+                [
+                    "pernos",
+                    4
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    19
+                ],
+                [
+                    "metal.",
+                    1
+                ],
+                [
+                    "metal",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 40.0,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "439228",
+                    "titulo": "Tornillo cabeza lenteja 8mmx3/4'' autoperforante 100unidades Mamut",
+                    "largo_mm": 19.05,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1096659",
+                    "titulo": "Tornillo autoperforante 8x1/2 1000 unidades Mamut",
+                    "largo_mm": 12.7,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1399037",
+                    "titulo": "Tornillo para madera cabeza lenteja 8.0x160 mm 1 un.",
+                    "largo_mm": 160.0,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1399036",
+                    "titulo": "Tornillo para madera cabeza lenteja 8x200 mm 1 un.",
+                    "largo_mm": 200.0,
+                    "diametro_mm": 8.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 17,
+            "tamano": 21,
+            "por_tienda": {
+                "easy": 21
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    21
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    21
+                ]
+            ],
+            "largo_mm_medio": 30.0,
+            "diam_mm_medio": 1.5,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1399048",
+                    "titulo": "Perno hexagonal métrico inox con tuerca M5x30 mm 2 unidades",
+                    "largo_mm": 30.0,
+                    "diametro_mm": 5.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1399029",
+                    "titulo": "Perno hexagonal 8.8 métrico con tuerca M8-1.25x30 mm ZBR 2 unidades",
+                    "largo_mm": 30.0,
+                    "diametro_mm": 1.25
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1399033",
+                    "titulo": "Perno hexagonal 8.8 métrico con tuerca M6-1.0x40 mm ZBR 2 unidades",
+                    "largo_mm": 40.0,
+                    "diametro_mm": 1.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1399034",
+                    "titulo": "Perno hexagonal 8.8 métrico con tuerca M6-1.0x30 mm ZBR 2 unidades",
+                    "largo_mm": 30.0,
+                    "diametro_mm": 1.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 52,
+            "tamano": 20,
+            "por_tienda": {
+                "sodimac": 20
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    20
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    20
+                ]
+            ],
+            "largo_mm_medio": 69.85,
+            "diam_mm_medio": 7.94,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "110320678",
+                    "titulo": "Perno coche 1/4X1 1/2 100 unidades",
+                    "largo_mm": 38.1,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110283485",
+                    "titulo": "Perno coche 5/16\" x 1 1/2\" 100 unidades",
+                    "largo_mm": 7.94,
+                    "diametro_mm": 7.94
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110316112",
+                    "titulo": "Perno Coche 1/4\" x 2\" zincado brillante 100 unidades",
+                    "largo_mm": 6.35,
+                    "diametro_mm": 6.35
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110282389",
+                    "titulo": "Perno coche 1/4X1 1/4 100 unidades",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 0.25
+                }
+            ]
+        },
+        {
+            "cluster_id": 11,
+            "tamano": 20,
+            "por_tienda": {
+                "sodimac": 19,
+                "easy": 1
+            },
+            "mix_tiendas": 0.05,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    20
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "metal",
+                    4
+                ],
+                [
+                    "acero",
+                    3
+                ],
+                [
+                    "plástico",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 0.75,
+            "diam_mm_medio": 5.55,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "112907263",
+                    "titulo": "Tornillo Concreto Concreto 3/4 mm 1/4 \" 4 unidad(es)",
+                    "largo_mm": 0.75,
+                    "diametro_mm": 6.35
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112907314",
+                    "titulo": "Tornillo Concreto Concreto 3/4 mm 3/16 \" 4 unidad(es)",
+                    "largo_mm": 0.75,
+                    "diametro_mm": 4.76
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112907366",
+                    "titulo": "Tornillo Concreto Concreto 110 mm 7.5 mm 5 unidad(es)",
+                    "largo_mm": 110.0,
+                    "diametro_mm": 7.5
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112907298",
+                    "titulo": "Tornillo Concreto Concreto 3/4 mm 1/4 \" 4 unidad(es)",
+                    "largo_mm": 0.75,
+                    "diametro_mm": 6.35
+                }
+            ]
+        },
+        {
+            "cluster_id": 43,
+            "tamano": 20,
+            "por_tienda": {
+                "sodimac": 20
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    20
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero inoxidable",
+                    20
+                ]
+            ],
+            "largo_mm_medio": 14.35,
+            "diam_mm_medio": 3.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "112752006",
+                    "titulo": "Perno cabeza boton acero inoxidable c/tuerca M3 x 20 mm 4 unid",
+                    "largo_mm": 20.0,
+                    "diametro_mm": 3.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112751738",
+                    "titulo": "Perno cabeza redonda acero inoxidable unc 1/4 x 1/2 2 unid",
+                    "largo_mm": 12.7,
+                    "diametro_mm": 0.25
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112751682",
+                    "titulo": "Perno cabeza redonda acero inoxidable unc 3/16 x 3/4 2 unid",
+                    "largo_mm": 19.05,
+                    "diametro_mm": 0.19
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112752009",
+                    "titulo": "Perno cabeza boton acero inoxidable c/tuerca M2 x 12 mm 4 unid",
+                    "largo_mm": 12.0,
+                    "diametro_mm": 2.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 13,
+            "tamano": 20,
+            "por_tienda": {
+                "sodimac": 20
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    15
+                ],
+                [
+                    "tornillos",
+                    4
+                ],
+                [
+                    "general",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "metal",
+                    17
+                ],
+                [
+                    "acero",
+                    3
+                ]
+            ],
+            "largo_mm_medio": 27.5,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "146060053",
+                    "titulo": "Perno con Tuerca Métrico Metal 20 mm 6 mm 4 unidad(es)",
+                    "largo_mm": 20.0,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112740520",
+                    "titulo": "Mini Tornillos Métrico Madera 6 cm 1.5 cm 4 unidad(es)",
+                    "largo_mm": 60.0,
+                    "diametro_mm": 15.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112740584",
+                    "titulo": "Mini Tornillos Métrico Madera 8 cm 2 cm 4 unidad(es)",
+                    "largo_mm": 80.0,
+                    "diametro_mm": 20.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146060049",
+                    "titulo": "Perno con Tuerca Métrico Metal 50 mm 6 mm 4 unidad(es)",
+                    "largo_mm": 50.0,
+                    "diametro_mm": 6.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 90,
+            "tamano": 20,
+            "por_tienda": {
+                "sodimac": 1,
+                "easy": 19
+            },
+            "mix_tiendas": 0.05,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    19
+                ],
+                [
+                    "pernos",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    16
+                ],
+                [
+                    "fierro",
+                    3
+                ],
+                [
+                    "metal",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 25.4,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "149082638",
+                    "titulo": "Tuercas Hexagonales ¼ 20 100 unidades",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "215682",
+                    "titulo": "Roscalata ranura combinada 10x1.1/2'' 100 unidades Imporper",
+                    "largo_mm": null,
+                    "diametro_mm": 10.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "148723",
+                    "titulo": "Roscalata 6x1'' ranura combinada T1 100 unidades Imporper",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "215668",
+                    "titulo": "Roscalata ranura combinada 8x1'' 100 unidades Imporper",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 8.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 18,
+            "tamano": 20,
+            "por_tienda": {
+                "sodimac": 11,
+                "easy": 9
+            },
+            "mix_tiendas": 0.82,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    19
+                ],
+                [
+                    "general",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    19
+                ]
+            ],
+            "largo_mm_medio": 92.07,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "110276755",
+                    "titulo": "Perno ojo con tuerca M6 x 3\" 1 unidad",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110300349",
+                    "titulo": "Perno ojo con tuerca M8 x 3 1/4\"",
+                    "largo_mm": 82.55,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110292261",
+                    "titulo": "Perno ojo con tuerca M8 x 4\" 1 unidad",
+                    "largo_mm": 101.6,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110276630",
+                    "titulo": "Perno ojo con tuerca M10 x 4\" 1 unidad",
+                    "largo_mm": 101.6,
+                    "diametro_mm": 10.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 8,
+            "tamano": 20,
+            "por_tienda": {
+                "sodimac": 20
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pinturas",
+            "categorias_top3": [
+                [
+                    "pinturas",
+                    20
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": 101.6,
+            "diam_mm_medio": null,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "127848165",
+                    "titulo": "LATEX GAL PISTACHO SOQ PAJ",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "123104201",
+                    "titulo": "LATEX ACRILICO ANTIHONGOS 1 GALON NEGRO",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "123115841",
+                    "titulo": "LATEX ACRILICO ANTIHONGOS 1 GALON AZUL COLONIAL",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "121472841",
+                    "titulo": "Latex Blanco Tineta 4 Gal + Rodillo de regalo",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 70,
+            "tamano": 20,
+            "por_tienda": {
+                "easy": 20
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    18
+                ],
+                [
+                    "general",
+                    1
+                ],
+                [
+                    "cementos",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    17
+                ],
+                [
+                    "fierro",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 101.6,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1399074",
+                    "titulo": "Tornillo para madera avellanante 10x120 mm 3 un.",
+                    "largo_mm": 120.0,
+                    "diametro_mm": 10.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1398133",
+                    "titulo": "Tornillo drywall para madera rosca gruesa 8x3\" 10 un.",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1398135",
+                    "titulo": "Tornillo drywall para madera rosca gruesa 6x1-5/8\" 10 un.",
+                    "largo_mm": 41.27,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1399083",
+                    "titulo": "Tornillo madera con fresa 6.0x100/60 mm zincado iridiscente 5 unidades",
+                    "largo_mm": 1.67,
+                    "diametro_mm": 6.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 91,
+            "tamano": 20,
+            "por_tienda": {
+                "easy": 20
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    19
+                ],
+                [
+                    "maderas",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "metal",
+                    11
+                ],
+                [
+                    "fierro",
+                    4
+                ],
+                [
+                    "acero",
+                    4
+                ]
+            ],
+            "largo_mm_medio": 15.88,
+            "diam_mm_medio": 8.5,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "388555",
+                    "titulo": "Tornillo madera soberbio. 3/16 x 2’’ Easy Fix",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 0.19
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "388531",
+                    "titulo": "Tornillo madera tsc. 5 mm. (3.0) x 1/2. Easy Fix",
+                    "largo_mm": 12.7,
+                    "diametro_mm": 0.5
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "436334",
+                    "titulo": "Tornillo madera aglomerada. #8 x 1''. Easy Fix",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "388554",
+                    "titulo": "Tornillo madera soberbio. 3/16 x 1. 1/2’’ Easy Fix",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 0.19
+                }
+            ]
+        },
+        {
+            "cluster_id": 88,
+            "tamano": 19,
+            "por_tienda": {
+                "sodimac": 2,
+                "easy": 17
+            },
+            "mix_tiendas": 0.12,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    19
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    15
+                ],
+                [
+                    "acero inoxidable",
+                    1
+                ],
+                [
+                    "metal",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 50.8,
+            "diam_mm_medio": 6.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "124780324",
+                    "titulo": "10 Pcs Placa De Reparacion Bisagra Mueble Tornillos Puerta",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "113360023",
+                    "titulo": "Tornillo Para Colgar M3 5X30 Mm Zincado Amarillo, 2 Unidades",
+                    "largo_mm": 30.0,
+                    "diametro_mm": 5.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "147602",
+                    "titulo": "Tornillo soberbio 3/16''x1 1/2'' caja 144unidades Mamut",
+                    "largo_mm": 38.1,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1096663",
+                    "titulo": "Tornillo yesocarton pbr/zinc.6x2 100 unidades Mamut",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 6.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 50,
+            "tamano": 19,
+            "por_tienda": {
+                "sodimac": 18,
+                "easy": 1
+            },
+            "mix_tiendas": 0.06,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    18
+                ],
+                [
+                    "general",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    18
+                ]
+            ],
+            "largo_mm_medio": 50.0,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "110309096",
+                    "titulo": "Tornillo Turbo screw Madera Madera 25 mm 3.5 mm 144 unidad(es)",
+                    "largo_mm": 25.0,
+                    "diametro_mm": 3.5
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110306538",
+                    "titulo": "Tornillo Turbo screw Madera Madera 16 mm 3 mm 144 unidad(es)",
+                    "largo_mm": 16.0,
+                    "diametro_mm": 3.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110281683",
+                    "titulo": "Tornillo Turbo screw Madera Madera 40 mm 3.5 mm 144 unidad(es)",
+                    "largo_mm": 40.0,
+                    "diametro_mm": 3.5
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "110296044",
+                    "titulo": "Tornillo Turbo screw Madera Madera 50 mm 5 mm 144 unidad(es)",
+                    "largo_mm": 50.0,
+                    "diametro_mm": 5.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 85,
+            "tamano": 19,
+            "por_tienda": {
+                "easy": 19
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    19
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "metal",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 35.0,
+            "diam_mm_medio": 5.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "693415",
+                    "titulo": "Tornillo madera 3x35 mm 144 unidades Mamut",
+                    "largo_mm": 35.0,
+                    "diametro_mm": 3.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "213880",
+                    "titulo": "Tornillo madera 3x12 mm 144 unidades Mamut",
+                    "largo_mm": 12.0,
+                    "diametro_mm": 3.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "144534",
+                    "titulo": "Tornillo madera 10x30 mm 144 unidades Mamut",
+                    "largo_mm": 30.0,
+                    "diametro_mm": 10.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "144535",
+                    "titulo": "Tornillo madera 10x40 mm 144 unidades Mamut",
+                    "largo_mm": 40.0,
+                    "diametro_mm": 10.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 81,
+            "tamano": 19,
+            "por_tienda": {
+                "easy": 19
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    18
+                ],
+                [
+                    "general",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    12
+                ],
+                [
+                    "bronce",
+                    2
+                ],
+                [
+                    "bronce.",
+                    2
+                ]
+            ],
+            "largo_mm_medio": 22.7,
+            "diam_mm_medio": 6.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1096671",
+                    "titulo": "Tornillo #6 x 1 5/8'' zincado 600 unidades",
+                    "largo_mm": 41.27,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "381876",
+                    "titulo": "Tornillo escuadra 1 10 unidades Lioi",
+                    "largo_mm": null,
+                    "diametro_mm": 25.4
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1105842",
+                    "titulo": "Tornillo 6 x 3/4'' placa yeso cartón rosca gruesa negro x100 unidades Imporper",
+                    "largo_mm": 19.05,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "381875",
+                    "titulo": "Tornillo escuadra 2 10 unidades Lioi",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 22,
+            "tamano": 19,
+            "por_tienda": {
+                "easy": 19
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    19
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "fierro",
+                    19
+                ]
+            ],
+            "largo_mm_medio": 101.6,
+            "diam_mm_medio": 0.31,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "906676",
+                    "titulo": "Perno hexagonal zbr con tuerca 3/8x6'' 20u Mamut.",
+                    "largo_mm": 152.4,
+                    "diametro_mm": 0.38
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "906661",
+                    "titulo": "Perno hexagonal zbr con tuerca 5/16x1'' 20u Mamut.",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 0.31
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "906675",
+                    "titulo": "Perno hexagonal zbr con tuerca 3/8x5'' 20u Mamut.",
+                    "largo_mm": 127.0,
+                    "diametro_mm": 0.38
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "906667",
+                    "titulo": "Perno hexagonal zbr con tuerca 5/16x5'' 20u Mamut.",
+                    "largo_mm": 127.0,
+                    "diametro_mm": 0.31
+                }
+            ]
+        },
+        {
+            "cluster_id": 82,
+            "tamano": 18,
+            "por_tienda": {
+                "sodimac": 18
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    18
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    14
+                ],
+                [
+                    "acero inoxidable",
+                    2
+                ],
+                [
+                    "acero galvanizado inoxidable",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 35.0,
+            "diam_mm_medio": 7.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "139458570",
+                    "titulo": "TORNILLO LENTEJA PUNTA BROCA 34",
+                    "largo_mm": 6.0,
+                    "diametro_mm": 19.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "141044190",
+                    "titulo": "Tornillo Volcanita Zincado CRS 6x1\" Caja 100 Unidades",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146656472",
+                    "titulo": "Tornillo CRS Volcanita 6X5/8 Zincado 500 unidades",
+                    "largo_mm": 15.88,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "141044551",
+                    "titulo": "Tornillo Volcanita Zincado CRS 6x1-1/4\" Caja 100 Unidades",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 6.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 33,
+            "tamano": 18,
+            "por_tienda": {
+                "sodimac": 14,
+                "easy": 4
+            },
+            "mix_tiendas": 0.29,
+            "categoria_top": "maderas",
+            "categorias_top3": [
+                [
+                    "maderas",
+                    13
+                ],
+                [
+                    "general",
+                    4
+                ],
+                [
+                    "pinturas",
+                    1
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": 50.8,
+            "diam_mm_medio": 52.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "146665763",
+                    "titulo": "Tablero MDF 3mm 1,52x2,44mt",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 52.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146297041",
+                    "titulo": "Tablero MDF 4mm 2,12x2,44mt",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 12.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146297729",
+                    "titulo": "Tablero MDF 5,5mm 1,52x2,44mt",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 52.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "146670502",
+                    "titulo": "Tablero MDF 4mm 1,52x2,44mt",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 52.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 5,
+            "tamano": 18,
+            "por_tienda": {
+                "easy": 18
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "general",
+            "categorias_top3": [
+                [
+                    "general",
+                    18
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "mdf y flexilam",
+                    18
+                ]
+            ],
+            "largo_mm_medio": 205.0,
+            "diam_mm_medio": 80.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1493606",
+                    "titulo": "Puerta Flexilam MDF gris 80x210 cm",
+                    "largo_mm": 210.0,
+                    "diametro_mm": 80.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1493195",
+                    "titulo": "Puerta Flexilam MDF gris 80x200 cm",
+                    "largo_mm": 200.0,
+                    "diametro_mm": 80.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1493602",
+                    "titulo": "Puerta Flexilam MDF gris 60x210 cm",
+                    "largo_mm": 210.0,
+                    "diametro_mm": 60.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1493609",
+                    "titulo": "Puerta Flexilam MDF gris 95x210 cm",
+                    "largo_mm": 210.0,
+                    "diametro_mm": 95.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 2,
+            "tamano": 18,
+            "por_tienda": {
+                "easy": 18
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "general",
+            "categorias_top3": [
+                [
+                    "general",
+                    18
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "mdf y flexilam",
+                    18
+                ]
+            ],
+            "largo_mm_medio": 205.0,
+            "diam_mm_medio": 80.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1493178",
+                    "titulo": "Puerta Flexilam MDF blanco 75x200 cm",
+                    "largo_mm": 200.0,
+                    "diametro_mm": 75.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1493182",
+                    "titulo": "Puerta Flexilam MDF blanco 95x200 cm",
+                    "largo_mm": 200.0,
+                    "diametro_mm": 95.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1493175",
+                    "titulo": "Puerta Flexilam MDF blanco 60x200 cm",
+                    "largo_mm": 200.0,
+                    "diametro_mm": 60.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1493179",
+                    "titulo": "Puerta Flexilam MDF blanco 80x200 cm",
+                    "largo_mm": 200.0,
+                    "diametro_mm": 80.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 83,
+            "tamano": 17,
+            "por_tienda": {
+                "sodimac": 17
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    17
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    16
+                ],
+                [
+                    "revestimiento de zinc",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 31.75,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "151474438",
+                    "titulo": "Tornillo Cabeza De Lenteja 8X2 Punta Broca 100 Unidades",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "144001132",
+                    "titulo": "TORNILLO LENTEJA PUNTA BROCA UNO UN MEDIO",
+                    "largo_mm": 6.0,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "144313335",
+                    "titulo": "Tornillo Cabeza De Lenteja 8X3/4 Punta Broca 100 Und",
+                    "largo_mm": 19.05,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "129800846",
+                    "titulo": "Tornillo Cabeza De Lenteja 8X1/2 Punta Broca 1000 Unidades",
+                    "largo_mm": 12.7,
+                    "diametro_mm": 8.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 56,
+            "tamano": 17,
+            "por_tienda": {
+                "easy": 17
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    17
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "metal",
+                    10
+                ],
+                [
+                    "acero",
+                    4
+                ],
+                [
+                    "fierro",
+                    3
+                ]
+            ],
+            "largo_mm_medio": 6.0,
+            "diam_mm_medio": 6.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "387925",
+                    "titulo": "Tornillo volcanita. punta fina. 6 mm x 1. 5/8’’. Easy Fix",
+                    "largo_mm": 6.0,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "387937",
+                    "titulo": "Tornillo volcanita. rosca. 6 mm x 1. 5/8’’. Easy Fix",
+                    "largo_mm": 6.0,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "387939",
+                    "titulo": "Tornillo volcanita. rosca. 6 mm x 2. 1/4’’. Easy Fix",
+                    "largo_mm": 6.0,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "387928",
+                    "titulo": "Tornillo volcanita punta fina zb. #8 x 3. Easy Fix",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 8.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 76,
+            "tamano": 17,
+            "por_tienda": {
+                "easy": 17
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    17
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": 22.23,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1106962",
+                    "titulo": "Tornillo autoperforante 6-9 (crs)x1 5/8'' negro Mamut",
+                    "largo_mm": 41.27,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "144845",
+                    "titulo": "Tornillo autoperforante 10 mmx1'' sin gomilla 100 unidades Mamut",
+                    "largo_mm": 25.4,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1187786",
+                    "titulo": "Tornillo autoperforante 6 x 80 mm 24 unidades Mamut",
+                    "largo_mm": 80.0,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1106961",
+                    "titulo": "Tornillo autoperforante 6-9 (crs)x1 1/4'' 25 unidades Mamut",
+                    "largo_mm": 31.75,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 7,
+            "tamano": 17,
+            "por_tienda": {
+                "easy": 17
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "general",
+            "categorias_top3": [
+                [
+                    "general",
+                    17
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "mdf | flexilam",
+                    17
+                ]
+            ],
+            "largo_mm_medio": 200.0,
+            "diam_mm_medio": 80.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1493150",
+                    "titulo": "Puerta MDF/flexilam green 70x210 cm",
+                    "largo_mm": 210.0,
+                    "diametro_mm": 70.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1493139",
+                    "titulo": "Puerta MDF/flexilam green 70x200 cm",
+                    "largo_mm": 200.0,
+                    "diametro_mm": 70.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1493145",
+                    "titulo": "Puerta MDF/flexilam green 95x200 cm",
+                    "largo_mm": 200.0,
+                    "diametro_mm": 95.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1493138",
+                    "titulo": "Puerta MDF/flexilam green 65x200 cm",
+                    "largo_mm": 200.0,
+                    "diametro_mm": 65.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 65,
+            "tamano": 17,
+            "por_tienda": {
+                "easy": 17
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pinturas",
+            "categorias_top3": [
+                [
+                    "pinturas",
+                    17
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": null,
+            "diam_mm_medio": null,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1232936",
+                    "titulo": "Esmalte al agua 946 ml Ultra cover océano brillante Rust-Oleum",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1339616",
+                    "titulo": "Esmalte al agua 946ml Modern Masters bronce oscuro mate Rust Oleum",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1339615",
+                    "titulo": "Esmalte al agua 946ml Modern Masters perla mate Rust Oleum",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1339618",
+                    "titulo": "Esmalte al agua 946ml Modern Masters oro pálido mate Rust Oleum",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 75,
+            "tamano": 16,
+            "por_tienda": {
+                "sodimac": 16
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    16
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    16
+                ]
+            ],
+            "largo_mm_medio": 31.75,
+            "diam_mm_medio": 6.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "140773217",
+                    "titulo": "Tornillo Volcanita Punta Fina 6x1 1/4 Zinc 100 unds",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "141463555",
+                    "titulo": "Tornillo Volcanita Punta Fina 6x1 Zinc 500 unds",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "144353838",
+                    "titulo": "Tornillo Volcanita Punta Broca 6X2 Zinc Caja 8000 unidades",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "140770114",
+                    "titulo": "Tornillo Volcanita Punta Broca 6X1 1/4 Zinc 100 unidades",
+                    "largo_mm": 31.75,
+                    "diametro_mm": 6.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 37,
+            "tamano": 16,
+            "por_tienda": {
+                "sodimac": 16
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    16
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    16
+                ]
+            ],
+            "largo_mm_medio": 14.0,
+            "diam_mm_medio": 3.5,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "112744064",
+                    "titulo": "Perno cabeza boton M5 x 8 mm c/tuerca pavonado negro 2u",
+                    "largo_mm": 8.0,
+                    "diametro_mm": 5.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112740297",
+                    "titulo": "Perno cabeza boton M2 x 16 mm c/tuerca pavonado negro 4u",
+                    "largo_mm": 16.0,
+                    "diametro_mm": 2.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112740482",
+                    "titulo": "Perno cabeza boton M4 x 8 mm c/tuerca pavonado negro 3u",
+                    "largo_mm": 8.0,
+                    "diametro_mm": 4.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112744114",
+                    "titulo": "Perno cabeza boton M2 x 12 mm c/tuerca pavonado negro 4u",
+                    "largo_mm": 12.0,
+                    "diametro_mm": 2.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 26,
+            "tamano": 16,
+            "por_tienda": {
+                "sodimac": 16
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    16
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero inoxidable",
+                    16
+                ]
+            ],
+            "largo_mm_medio": 50.8,
+            "diam_mm_medio": 0.31,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "112752099",
+                    "titulo": "Perno coche c/tuerca y golilla acero inoxidable 3/8x1 1/2 2unid",
+                    "largo_mm": 38.1,
+                    "diametro_mm": 0.38
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112751988",
+                    "titulo": "Perno coche c/tuerca y golilla acero inoxidable 5/16x1\" 2unid",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 0.31
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112751702",
+                    "titulo": "Perno coche c/tuerca y golilla acero inoxidable 5/16x2\" 2unid",
+                    "largo_mm": 50.8,
+                    "diametro_mm": 0.31
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112752153",
+                    "titulo": "Perno coche c/tuerca y golilla acero inoxidable 5/16x3\" 2unid",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 0.31
+                }
+            ]
+        },
+        {
+            "cluster_id": 74,
+            "tamano": 16,
+            "por_tienda": {
+                "sodimac": 1,
+                "easy": 15
+            },
+            "mix_tiendas": 0.07,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    15
+                ],
+                [
+                    "pernos",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    6
+                ],
+                [
+                    "metal",
+                    4
+                ]
+            ],
+            "largo_mm_medio": 36.51,
+            "diam_mm_medio": 6.5,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "141148937",
+                    "titulo": "Tuercas de expansión hierro M8 30mm 50 unidades",
+                    "largo_mm": 30.0,
+                    "diametro_mm": 4.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1398165",
+                    "titulo": "Tornillo lancero 16x160 mm 2 un.",
+                    "largo_mm": 160.0,
+                    "diametro_mm": 16.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "556715",
+                    "titulo": "Tornillo drywall 6 x 1mm Mamut",
+                    "largo_mm": 1.0,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "556712",
+                    "titulo": "Tornillo drywall p/b con punta bal. 6 x 1'' Mamut",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 6.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 35,
+            "tamano": 16,
+            "por_tienda": {
+                "sodimac": 15,
+                "easy": 1
+            },
+            "mix_tiendas": 0.07,
+            "categoria_top": "pinturas",
+            "categorias_top3": [
+                [
+                    "pinturas",
+                    16
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": 6.35,
+            "diam_mm_medio": null,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "143985181",
+                    "titulo": "ESMALTE SINTETICO GRIS PERLA BRILLANTE 1 LITRO BMAC",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "143985045",
+                    "titulo": "ESMALTE SINTETICO CAFE MORO BRILLANTE TINETA BMAC",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "143985047",
+                    "titulo": "ESMALTE SINTETICO GRIS PERLA BRILLANTE GALON BMAC",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "143985049",
+                    "titulo": "ESMALTE SINTETICO GRIS PERLA BRILLANTE TINETA BMAC",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 78,
+            "tamano": 16,
+            "por_tienda": {
+                "easy": 16
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    11
+                ],
+                [
+                    "general",
+                    5
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero inoxidable",
+                    15
+                ],
+                [
+                    "acero",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 25.4,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1413508",
+                    "titulo": "Roscalata cabeza plana inoxidable 10x1 1/2\" 5 unidades",
+                    "largo_mm": 38.1,
+                    "diametro_mm": 10.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1413504",
+                    "titulo": "Roscala plana inoxidable 8x3/4\" 5 unidades",
+                    "largo_mm": 19.05,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1413503",
+                    "titulo": "Roscala plana inoxidable 8x1/2\" 5 unidades",
+                    "largo_mm": 12.7,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1413501",
+                    "titulo": "Roscala plana inoxidable 6x1/2\" 5 unidades",
+                    "largo_mm": 12.7,
+                    "diametro_mm": 6.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 64,
+            "tamano": 16,
+            "por_tienda": {
+                "easy": 16
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pinturas",
+            "categorias_top3": [
+                [
+                    "pinturas",
+                    16
+                ]
+            ],
+            "materiales_top3": [],
+            "largo_mm_medio": null,
+            "diam_mm_medio": null,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1217729",
+                    "titulo": "Esmalte al agua 946 ml Ultra cover negro semi brillante Rust-Oleum",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1297048",
+                    "titulo": "Esmalte sintético 946 ml Alta Temperatura negro mate Rust-Oleum.",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1302133",
+                    "titulo": "Esmalte al agua 946 ml Ultra cover gris oscuro brillante Rust-Oleum",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "1217728",
+                    "titulo": "Esmalte al agua 946 ml Ultra cover blanco semi brillante Rust-Oleum",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                }
+            ]
+        },
+        {
+            "cluster_id": 40,
+            "tamano": 15,
+            "por_tienda": {
+                "sodimac": 15
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    13
+                ],
+                [
+                    "general",
+                    1
+                ],
+                [
+                    "tornillos",
+                    1
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    14
+                ],
+                [
+                    "zamac",
+                    1
+                ]
+            ],
+            "largo_mm_medio": 82.55,
+            "diam_mm_medio": 0.5,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "112907096",
+                    "titulo": "Perno para hormigon antisismico M10 x 80 mm zincado 2 unid",
+                    "largo_mm": 80.0,
+                    "diametro_mm": 10.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112907332",
+                    "titulo": "Perno para hormigon antisismico M8 x 100 mm zincado 2 unid",
+                    "largo_mm": 100.0,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112906998",
+                    "titulo": "Perno para hormigon antisismico M10 x 100 mm zincado 2 unid",
+                    "largo_mm": 100.0,
+                    "diametro_mm": 10.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "112907414",
+                    "titulo": "Perno para hormigon antisismico M12 x 110 mm zincado 1 unid",
+                    "largo_mm": 110.0,
+                    "diametro_mm": 12.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 1,
+            "tamano": 15,
+            "por_tienda": {
+                "sodimac": 15
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "pernos",
+            "categorias_top3": [
+                [
+                    "pernos",
+                    15
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    15
+                ]
+            ],
+            "largo_mm_medio": 50.8,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "149020658",
+                    "titulo": "Pack Perno Coche 1 /4x3 + Tuerca + Golilla Presión 100 Un",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 4.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "149021117",
+                    "titulo": "Pack Perno Coche 1 /4x1. 1 /2 + Tuerca + Golilla (100 Un)",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 4.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "149020544",
+                    "titulo": "Pack Perno Coche 1 /4x 3 + Tuerca + Golilla Pl Cte(100 Un)",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 4.0
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "149021082",
+                    "titulo": "Pack Perno Coche 1 /4 x 3 + Tuerca + Golilla Clbra (100 Un)",
+                    "largo_mm": 76.2,
+                    "diametro_mm": 4.0
+                }
+            ]
+        },
+        {
+            "cluster_id": 86,
+            "tamano": 15,
+            "por_tienda": {
+                "easy": 15
+            },
+            "mix_tiendas": 0.0,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    13
+                ],
+                [
+                    "general",
+                    2
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "metal",
+                    5
+                ],
+                [
+                    "acero",
+                    4
+                ],
+                [
+                    "zincado brillante",
+                    2
+                ]
+            ],
+            "largo_mm_medio": 11.11,
+            "diam_mm_medio": 8.0,
+            "ejemplos": [
+                {
+                    "tienda": "easy",
+                    "sku": "1106990",
+                    "titulo": "Tornillo roscalata 8x1 1/2'' 16 piezas Mamut",
+                    "largo_mm": 38.1,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "148731",
+                    "titulo": "Roscalata 8 x 1 Mamut",
+                    "largo_mm": 25.4,
+                    "diametro_mm": 8.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "148729",
+                    "titulo": "Roscalata. ranura combinada. 6 mm x 5/8’’ Mamut",
+                    "largo_mm": 6.0,
+                    "diametro_mm": 6.0
+                },
+                {
+                    "tienda": "easy",
+                    "sku": "148716",
+                    "titulo": "Roscalata 8 x 1 1/2 Mamut",
+                    "largo_mm": 38.1,
+                    "diametro_mm": 8.0
+                }
+            ]
+        },
+        {
+            "cluster_id": -1,
+            "tamano": 415,
+            "por_tienda": {
+                "sodimac": 162,
+                "easy": 253
+            },
+            "mix_tiendas": 0.64,
+            "categoria_top": "tornillos",
+            "categorias_top3": [
+                [
+                    "tornillos",
+                    229
+                ],
+                [
+                    "general",
+                    62
+                ],
+                [
+                    "pernos",
+                    60
+                ]
+            ],
+            "materiales_top3": [
+                [
+                    "acero",
+                    122
+                ],
+                [
+                    "metal",
+                    31
+                ],
+                [
+                    "nylon",
+                    12
+                ]
+            ],
+            "largo_mm_medio": 31.75,
+            "diam_mm_medio": 6.0,
+            "ejemplos": [
+                {
+                    "tienda": "sodimac",
+                    "sku": "148159792",
+                    "titulo": "Juego De 4 Tornillos Para Asiento Del Inodoro Wc Universal",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "148159794",
+                    "titulo": "Accesorios Para Tornillos De Asiento De Inodoro De 2 Piezas",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "148548798",
+                    "titulo": "Kit Surtido De Tornillos, Pernos Y Tuercas 24 Cuadriculas",
+                    "largo_mm": null,
+                    "diametro_mm": null
+                },
+                {
+                    "tienda": "sodimac",
+                    "sku": "150441766",
+                    "titulo": "Tornillo Volcanita Madera 6 X 2 1/2 Pulgadas (100 Unidades)",
+                    "largo_mm": 63.5,
+                    "diametro_mm": 6.0
+                }
+            ]
+        }
+    ]
+}

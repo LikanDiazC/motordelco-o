@@ -1,0 +1,140 @@
+{
+  "total_pares": 1141,
+  "positivos": 163,
+  "negativos": 978,
+  "modelo_elegido": "RandomForest",
+  "feature_cols": [
+    "cosine_sim",
+    "diff_largo_mm",
+    "diff_diametro_mm",
+    "tiene_dims",
+    "brand_match",
+    "material_match",
+    "cantidad_match",
+    "tipo_rosca_match",
+    "tipo_cabeza_match",
+    "jaccard_titulo",
+    "ratio_precio",
+    "mismo_cluster"
+  ],
+  "feature_importance": {
+    "cosine_sim": 0.516164035533346,
+    "brand_match": 0.19725625933776134,
+    "jaccard_titulo": 0.10013135919518705,
+    "mismo_cluster": 0.06868616633965166,
+    "diff_largo_mm": 0.04256226180576848,
+    "diff_diametro_mm": 0.036118269370019,
+    "tiene_dims": 0.020338774225387872,
+    "ratio_precio": 0.00711039403178016,
+    "material_match": 0.00658976536632346,
+    "cantidad_match": 0.005042710266344863,
+    "tipo_rosca_match": 4.528429930136299e-09,
+    "tipo_cabeza_match": 0.0
+  },
+  "resultados": {
+    "RandomForest": {
+      "nombre": "RandomForest",
+      "cv_f1_mean": 1.0,
+      "cv_f1_std": 0.0,
+      "cv_auc_mean": 1.0,
+      "cv_auc_std": 0.0,
+      "test_precision": 1.0,
+      "test_recall": 1.0,
+      "test_f1": 1.0,
+      "test_auc": 1.0,
+      "confusion_matrix": [
+        [
+          196,
+          0
+        ],
+        [
+          0,
+          33
+        ]
+      ],
+      "umbral_optimo": 0.8503113601689567,
+      "f1_umbral_optimo": 0.9999999995,
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 196.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 33.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 229.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 229.0
+        }
+      }
+    },
+    "GradientBoosting": {
+      "nombre": "GradientBoosting",
+      "cv_f1_mean": 1.0,
+      "cv_f1_std": 0.0,
+      "cv_auc_mean": 1.0,
+      "cv_auc_std": 0.0,
+      "test_precision": 1.0,
+      "test_recall": 1.0,
+      "test_f1": 1.0,
+      "test_auc": 1.0,
+      "confusion_matrix": [
+        [
+          196,
+          0
+        ],
+        [
+          0,
+          33
+        ]
+      ],
+      "umbral_optimo": 0.9999630114444079,
+      "f1_umbral_optimo": 0.9999999995,
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 196.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 33.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 229.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 229.0
+        }
+      }
+    }
+  },
+  "imputacion": {
+    "diff_largo_mm": 25.0,
+    "diff_diametro_mm": 5.0
+  }
+}

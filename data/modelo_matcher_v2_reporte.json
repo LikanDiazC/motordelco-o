@@ -1,0 +1,133 @@
+{
+  "n_features": 21,
+  "features_v1": [
+    "cosine_sim",
+    "diff_largo_mm",
+    "diff_diametro_mm",
+    "tiene_dims",
+    "brand_match",
+    "material_match",
+    "cantidad_match",
+    "tipo_rosca_match",
+    "tipo_cabeza_match",
+    "jaccard_titulo",
+    "ratio_precio",
+    "mismo_cluster"
+  ],
+  "features_v2": [
+    "v2_char_jaccard_3gram",
+    "v2_char_jaccard_4gram",
+    "v2_tokens_raros_jaccard",
+    "v2_nums_jaccard",
+    "v2_nums_overlap",
+    "v2_codigos_jaccard",
+    "v2_primera_palabra_match",
+    "v2_longitud_ratio",
+    "v2_lev_marca"
+  ],
+  "datasets": {
+    "weak": {
+      "total": 1141,
+      "pos": 163
+    },
+    "golden": {
+      "total": 432,
+      "pos": 72
+    }
+  },
+  "cv_intra_dataset": {
+    "weak_f1_cv": {
+      "mean": 0.9941176470588236,
+      "std": 0.011764705882352944
+    },
+    "weak_auc_cv": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "gold_f1_cv": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "gold_auc_cv": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  "generalizacion_ortogonal": {
+    "train_weak_test_golden": {
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1": 0.9473684210526315,
+      "auc": 0.9946373456790123,
+      "cm": [
+        [
+          352,
+          8
+        ],
+        [
+          0,
+          72
+        ]
+      ],
+      "support_pos": 72,
+      "support_neg": 360
+    },
+    "train_golden_test_weak": {
+      "precision": 1.0,
+      "recall": 0.3803680981595092,
+      "f1": 0.5511111111111111,
+      "auc": 0.8749325655212215,
+      "cm": [
+        [
+          978,
+          0
+        ],
+        [
+          101,
+          62
+        ]
+      ],
+      "support_pos": 163,
+      "support_neg": 978
+    }
+  },
+  "modelo_final": {
+    "precision": 0.9791666666666666,
+    "recall": 1.0,
+    "f1": 0.9894736842105263,
+    "auc": 0.9984915846300414,
+    "confusion_matrix": [
+      [
+        267,
+        1
+      ],
+      [
+        0,
+        47
+      ]
+    ]
+  },
+  "feature_importance": {
+    "cosine_sim": 0.29344924349360707,
+    "brand_match": 0.12591800135459194,
+    "v2_lev_marca": 0.11860196843858573,
+    "jaccard_titulo": 0.09768993438359577,
+    "v2_tokens_raros_jaccard": 0.09486890739177478,
+    "v2_char_jaccard_4gram": 0.07808804473914234,
+    "v2_char_jaccard_3gram": 0.06203536922779556,
+    "mismo_cluster": 0.03171950879448667,
+    "v2_primera_palabra_match": 0.030657703313708946,
+    "v2_nums_jaccard": 0.02157626026854222,
+    "diff_largo_mm": 0.018710018025421122,
+    "v2_nums_overlap": 0.007122432484603994,
+    "ratio_precio": 0.006166494449735603,
+    "cantidad_match": 0.0036019598295759223,
+    "diff_diametro_mm": 0.0035020206501335193,
+    "v2_longitud_ratio": 0.0027193760055628986,
+    "material_match": 0.0022672381488521814,
+    "tiene_dims": 0.0013055190002837095,
+    "tipo_rosca_match": 3.717762132226498e-18,
+    "tipo_cabeza_match": 0.0,
+    "v2_codigos_jaccard": 0.0
+  }
+}

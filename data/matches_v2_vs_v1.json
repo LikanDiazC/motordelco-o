@@ -1,0 +1,17 @@
+{
+  "v2": {
+    "matches_1a1": 34,
+    "ambiguos": 1279,
+    "candidatos": 2470
+  },
+  "v1": {
+    "matches_1a1": 8,
+    "ambiguos": 439,
+    "candidatos": 7271
+  },
+  "overlap": {
+    "en_ambos": 3,
+    "solo_v1": 5,
+    "solo_v2": 31
+  }
+}

@@ -91,15 +91,18 @@ def cotizar_producto(req: BusquedaRequest) -> Dict[str, Any]:
     }
 
     for tienda, res in resultados_tiendas.items():
+        p = res.producto
         respuesta["resultados"][tienda] = {
             "es_match": res.es_match,
             "similitud_semantica": round(res.similitud * 100, 2),
             "medidas_coinciden": res.dimensiones_coinciden,
-            "producto": res.producto['titulo'] if res.es_match else None,
-            "precio_total": res.producto['precio'] if res.es_match else None,
+            "producto": p['titulo'] if res.es_match else None,
+            "precio_total": p['precio'] if res.es_match else None,
             "unidades_pack": res.cantidad if res.es_match else None,
             "precio_unitario": round(res.precio_unitario, 1) if res.es_match else None,
-            "url": res.producto.get('url') if res.es_match else None,  # .get() evita KeyError
+            "url": p.get('url') if res.es_match else None,
+            "url_imagen": p.get('url_imagen') if res.es_match else None,
+            "categorias": p.get('categorias') if res.es_match else None,
         }
 
     return respuesta
